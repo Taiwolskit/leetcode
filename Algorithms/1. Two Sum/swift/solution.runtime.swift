@@ -3,7 +3,7 @@ class Solution {
         var hash: [Int : Int] = [:]
         
         for (i, j) in nums.enumerated() {
-            if let index = hash[target - j]{
+            if let index = hash[target - j] {
                 return [index, i]
             }
 

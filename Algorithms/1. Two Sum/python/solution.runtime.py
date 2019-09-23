@@ -1,13 +1,10 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        dict = {}
+        hash = {}
         for i, num in enumerate(nums):
-            if target - num in dict:
-                return [dict[target - num], i]
-            dict[num] = i
+            diff = target - num
+            if diff in hash:
+                return [hash[diff], i]
+            hash[num] = i
+
         return None

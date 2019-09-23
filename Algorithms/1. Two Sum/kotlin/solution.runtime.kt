@@ -1,13 +1,13 @@
 class Solution {
     fun twoSum(nums: IntArray, target: Int): IntArray {
-        val m = mutableMapOf<Int, Int>()
+        val hash = mutableMapOf<Int, Int>()
 
         for((index, num) in nums.withIndex()) {
-            if (m.containsKey(num)) {
-                return intArrayOf(m.getValue(num), index)
+            if (hash.containsKey(num)) {
+                return intArrayOf(hash.getValue(num), index)
             }
 
-            m[target - num] = index
+            hash[target - num] = index
         }
 
         return intArrayOf()
