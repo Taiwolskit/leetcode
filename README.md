@@ -22,6 +22,6 @@ Cracking the LeetCode with multiple programming language
 
 ## Shell
 
-| Number | Title | Difficulty | Bash |
-| ------ | ----- | ---------- | ---- |
-|        |       |            |      |
+| Number | Title                                                                       | Difficulty | Bash               |
+| ------ | --------------------------------------------------------------------------- | ---------- | ------------------ |
+| 192    | [Word Frequency](https://leetcode.com/problems/word-frequency/submissions/) | Medium     | :heavy_check_mark: |

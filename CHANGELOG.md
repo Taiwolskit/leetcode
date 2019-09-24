@@ -1,5 +1,9 @@
 # Change Log
 
+## [v1.2.0](#v1.2.0) - 2019-09-24
+
+- Add bash 192. Word Frequency
+
 ## [v1.1.0](#v1.1.0) - 2019-09-23
 
 - Add algorithms 1. Two Sum
