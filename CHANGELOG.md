@@ -1,5 +1,9 @@
 # Change Log
 
+## [v1.4.0](#v1.4.0) - 2019-09-25
+
+- Add database 175. Combine Two Tables
+
 ## [v1.3.0](#v1.3.0) - 2019-09-25
 
 - Add concurrency 1114. Print in Order

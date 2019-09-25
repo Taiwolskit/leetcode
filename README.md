@@ -16,9 +16,9 @@ Cracking the LeetCode with multiple programming language
 
 ## Database
 
-| Number | Title | Difficulty | MySQL |
-| ------ | ----- | ---------- | ----- |
-|        |       |            |       |
+| Number | Title                                                                    | Difficulty | MySQL |
+| ------ | ------------------------------------------------------------------------ | ---------- | ----- |
+| 175    | [Combine Two Tables ](https://leetcode.com/problems/combine-two-tables/) | Easy       |       |
 
 ## Shell
 
