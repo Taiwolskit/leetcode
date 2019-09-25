@@ -1,5 +1,9 @@
 # Change Log
 
+## [v1.3.0](#v1.3.0) - 2019-09-25
+
+- Add concurrency 1114. Print in Order
+
 ## [v1.2.0](#v1.2.0) - 2019-09-24
 
 - Add bash 192. Word Frequency

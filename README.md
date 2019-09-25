@@ -10,9 +10,9 @@ Cracking the LeetCode with multiple programming language
 
 ## Concurrency
 
-| Number | Title | Difficulty | Python |
-| ------ | ----- | ---------- | ------ |
-|        |       |            |        |
+| Number | Title                                                           | Difficulty | Python             |
+| ------ | --------------------------------------------------------------- | ---------- | ------------------ |
+| 1114   | [Print in Order](https://leetcode.com/problems/print-in-order/) | Easy       | :heavy_check_mark: |
 
 ## Database
 
