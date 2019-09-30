@@ -1,5 +1,9 @@
 # Change Log
 
+## [v1.5.0](#v1.5.0) - 2019-09-30
+
+- Add algorithms 2. Add Two Numbers
+
 ## [v1.4.0](#v1.4.0) - 2019-09-25
 
 - Add database 175. Combine Two Tables
