@@ -4,15 +4,17 @@ class Solution {
         var sofar = 0
         var last = 0
 
-        for ((i, c) in s.withIndex()) {
-            val idx = c.toInt()
+        for ((index, value) in s.withIndex()) {
+            val idx = value.toInt()
+						val diff = index - last
+
             if (dict[idx] >= last) {
-                sofar = maxOf(sofar, i - last)
+                sofar = maxOf(sofar, diff)
                 last = dict[idx] + 1
             } else {
-                sofar = maxOf(sofar, i - last + 1)
+                sofar = maxOf(sofar, diff + 1)
             }
-            dict[idx] = i
+            dict[idx] = index
             if (sofar == 127) break
         }
 
