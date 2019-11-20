@@ -4,10 +4,11 @@ Cracking the LeetCode with multiple programming language
 
 ## Algorithms
 
-| Number | Title                                                             | Difficulty | JavaScript         | Python             | Golang             | Swift              | Kotlin             |
-| ------ | ----------------------------------------------------------------- | ---------- | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ |
-| 1      | [Two Sum](https://leetcode.com/problems/two-sum/)                 | Easy       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| 2      | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Number | Title                                                                                                                           | Difficulty | JavaScript         | Python             | Golang             | Swift              | Kotlin             |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------- | ---------- | ------------------ | ------------------ | ------------------ | ------------------ | ------------------ |
+| 1      | [Two Sum](https://leetcode.com/problems/two-sum/)                                                                               | Easy       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 2      | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)                                                               | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 3      | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Concurrency
 

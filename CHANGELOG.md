@@ -1,5 +1,9 @@
 # Change Log
 
+## [v1.6.0](#v1.6.0) - 2019-11-20
+
+- Add algorithms 3. Longest Substring Without Repeating Characters
+
 ## [v1.5.0](#v1.5.0) - 2019-09-30
 
 - Add algorithms 2. Add Two Numbers
