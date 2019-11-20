@@ -11,11 +11,13 @@
  * @return {ListNode}
  */
 var addTwoNumbers = function(l1, l2) {
-  var l3 = null;
-  var temp = 0;
-  var currentNode = null;
+  let l3 = null;
+  let temp = 0;
+  let currentNode = null;
+
   while (l1 !== null || l2 !== null || temp !== 0) {
-    var sum = 0;
+    let sum = 0;
+
     if (l1 !== null) {
       sum += l1.val;
       l1 = l1.next;
@@ -28,7 +30,7 @@ var addTwoNumbers = function(l1, l2) {
     sum += temp;
     if (sum > 9) {
       temp = 1;
-      sum = sum - 10;
+      sum -= 10;
     } else {
       temp = 0;
     }

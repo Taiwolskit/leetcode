@@ -11,9 +11,9 @@
  * @return {ListNode}
  */
 var addTwoNumbers = function(l1, l2) {
-  let overlap = 0,
-    output = new ListNode(0),
-    head = output;
+  let overlap = 0;
+  let output = new ListNode(0);
+  let head = output;
 
   while (output) {
     output.val = overlap;
@@ -24,11 +24,13 @@ var addTwoNumbers = function(l1, l2) {
       output.val %= 10;
       overlap = 1;
     }
+
     output.next =
-      (l1 && l1.next) || (l2 && l2.next) || overlap ? new ListNode(0) : null;
+      (l1 && l1.next) || (l2 && l2.next) || (overlap ? new ListNode(0) : null);
     output = output.next;
     l1 = l1 ? l1.next : null;
     l2 = l2 ? l2.next : null;
   }
+
   return head;
 };
