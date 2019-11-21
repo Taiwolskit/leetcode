@@ -4,17 +4,18 @@
  */
 var longestPalindrome = function(s) {
   let result = '';
+  const s_len = s.length
 
-  for (let index = 0; index < s.length; index++) {
+  for (let index = 0; index < s_len; index++) {
     let left = index;
 
-    while (index < s.length && s[index] === s[index + 1]) {
+    while (index < s_len && s[index] === s[index + 1]) {
       index++;
     }
-  
+
     let right = index;
 
-    while (left - 1 >= 0 && right + 1 < s.length && s[left - 1] === s[right + 1]) {
+    while (left - 1 >= 0 && right + 1 < s_len && s[left - 1] === s[right + 1]) {
       --left;
       ++right;
     }

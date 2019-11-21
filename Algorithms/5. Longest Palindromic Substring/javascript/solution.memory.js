@@ -3,35 +3,33 @@
  * @return {string}
  */
 var longestPalindrome = function(s) {
-  if (s.length === 0) return '';
+  let maxLength = 1;
+  let start = 0;
 
-  let max_len = 1;
-  let ans = s[0];
+  for (let i = 1; i < s.length; i++) {
+    let low = i - 1;
+    let high = i;
 
-  for (let start = 0, end = 0, expand = 1, n = s.length; start < n; start++) {
-    end = start;
-    while (end + 1 < n && s[end] === s[end + 1]) {
-      end++;
-    }
-
-    for (
-      expand = 1, max_expand = Math.min(start, n - 1 - end);
-      expand <= max_expand;
-      expand++
-    ) {
-      if (s[start - expand] !== s[end + expand]) {
-        break;
+    while (low > -1 && high < s.length && s.charAt(low) === s.charAt(high)) {
+      if (high - low + 1 > maxLength) {
+        maxLength = high - low + 1;
+        start = low;
       }
+      low -= 1;
+      high += 1;
     }
 
-    const curr_len = end - start + 2 * (expand - 1) + 1;
-    ans = curr_len >= max_len ? s.slice(start - expand + 1, end + expand) : ans;
-    max_len = Math.max(max_len, curr_len);
-
-    if (max_len === n) {
-      break;
+    low = i - 1;
+    high = i + 1;
+    while (low > -1 && high < s.length && s.charAt(low) === s.charAt(high)) {
+      if (high - low + 1 > maxLength) {
+        maxLength = high - low + 1;
+        start = low;
+      }
+      low -= 1;
+      high += 1;
     }
   }
 
-  return ans;
+  return s.substring(start, start + maxLength);
 };
