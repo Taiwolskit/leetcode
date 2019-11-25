@@ -12,7 +12,7 @@ var convert = function(s, numRows) {
     lines[row] = !lines[row] ? character : lines[row].concat(character);
 
     if (row === numRows - 1) {
-      direction = -1;
+      direction *= -1;
     }
     if (row === 0) {
       direction = 1;

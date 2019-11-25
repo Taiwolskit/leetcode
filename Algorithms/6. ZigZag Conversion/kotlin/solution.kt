@@ -7,7 +7,7 @@ class Solution {
         for (j in 0 until numRows) {
 
             var i = j
-            while (i<s.length) {
+            while (i < s.length) {
                 sb.append(s[i])
                 i += 2 * numRows - 2
 
