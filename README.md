@@ -13,6 +13,7 @@ Cracking the LeetCode with multiple programming language
 | 5      | [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                                   | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 6      | [ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)                                                           | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 7      | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                               | Easy       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 8      | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                               | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Concurrency
 
