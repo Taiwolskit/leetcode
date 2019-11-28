@@ -15,6 +15,7 @@ Cracking the LeetCode with multiple programming language
 | 7      | [Reverse Integer](https://leetcode.com/problems/reverse-integer/)                                                               | Easy       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 8      | [String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)                                               | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 9      | [Palindrome Number](https://leetcode.com/problems/palindrome-number/)                                                           | Easy       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 10     | [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)                                       | Hard       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Concurrency
 
