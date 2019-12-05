@@ -19,7 +19,8 @@ Cracking the LeetCode with multiple programming language
 | 11     | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)                                           | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 12     | [Integer to Roman](https://leetcode.com/problems/integer-to-roman/)                                                             | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 13     | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                                             | Easy       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| 14     | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                                             | Easy       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 14     | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                                   | Easy       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 15     | [3Sum](https://leetcode.com/problems/3sum/)                                                                                     | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Concurrency
 
