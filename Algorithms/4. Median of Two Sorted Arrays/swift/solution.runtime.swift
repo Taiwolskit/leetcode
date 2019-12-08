@@ -13,7 +13,7 @@ class Solution {
 
         while start <= end {
             let midX = (start + end) / 2
-            let midY = (total + 1)/2 - midX
+            let midY = (total + 1) / 2 - midX
             let xLeft = midX == 0 ? Int.min : nums1[midX - 1]
             let xRight = midX == oneSize ? Int.max : nums1[midX]
             let yLeft = midY == 0 ? Int.min : nums2[midY - 1]

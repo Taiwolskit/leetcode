@@ -1,23 +1,19 @@
 class Solution {
     fun lengthOfLongestSubstring(s: String): Int {
-        val dict = IntArray(127) { -1 }
-        var sofar = 0
-        var last = 0
-
-        for ((index, value) in s.withIndex()) {
-            val idx = value.toInt()
-						val diff = index - last
-
-            if (dict[idx] >= last) {
-                sofar = maxOf(sofar, diff)
-                last = dict[idx] + 1
-            } else {
-                sofar = maxOf(sofar, diff + 1)
+        var doubleCount = 0
+        val count = IntArray(128){0}
+        var longest = 0
+        var left = 0
+        for (right in s.indices) {
+            count[s[right].toInt()]++
+            if (count[s[right].toInt()] == 2) ++doubleCount
+            while(doubleCount > 0){
+                count[s[left].toInt()]--
+                if (count[s[left].toInt()] == 1) --doubleCount
+                ++left
             }
-            dict[idx] = index
-            if (sofar == 127) break
+            if (longest < right - left + 1) longest = right - left + 1
         }
-
-        return sofar
+        return longest
     }
 }

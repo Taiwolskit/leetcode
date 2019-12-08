@@ -4,28 +4,31 @@
  * @return {number}
  */
 var findMedianSortedArrays = function(nums1, nums2) {
-  const mergedArray = [];
-  const totalLength = nums1.length + nums2.length;
-  let i = 0,
-    j = 0;
-  const mid = Math.floor(totalLength / 2);
+  if (nums1.length > nums2.length) return findMedianSortedArrays(nums2, nums1);
+  let x = nums1.length;
+  let y = nums2.length;
+  let low = 0;
+  let high = x;
+  while (low <= high) {
+    const partitionX = (high + low) >> 1;
+    const partitionY = ((x + y + 1) >> 1) - partitionX;
 
-  while (i + j <= mid) {
-    if (nums1[i] === undefined) {
-      mergedArray[i + j] = nums2[j++];
-      continue;
-    }
-    if (nums2[j] === undefined) {
-      mergedArray[i + j] = nums1[i++];
-      continue;
-    }
-    mergedArray[i + j] = nums2[j] > nums1[i] ? nums1[i++] : nums2[j++];
-  }
+    const maxX =
+      partitionX == 0 ? Number.NEGATIVE_INFINITY : nums1[partitionX - 1];
+    const maxY =
+      partitionY == 0 ? Number.NEGATIVE_INFINITY : nums2[partitionY - 1];
 
-  if (totalLength % 2 === 0) {
-    return (
-      (mergedArray[totalLength / 2 - 1] + mergedArray[totalLength / 2]) / 2
-    );
+    const minX =
+      partitionX == nums1.length ? Number.POSITIVE_INFINITY : nums1[partitionX];
+    const minY =
+      partitionY == nums2.length ? Number.POSITIVE_INFINITY : nums2[partitionY];
+
+    if (maxX <= minY && maxY <= minX) {
+      const lowMax = Math.max(maxX, maxY);
+      if ((x + y) % 2 == 1) return lowMax;
+      return (lowMax + Math.min(minX, minY)) / 2;
+    } else if (maxX < minY) {
+      low = partitionX + 1;
+    } else high = partitionX - 1;
   }
-  return mergedArray[mid];
 };

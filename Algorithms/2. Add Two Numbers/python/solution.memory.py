@@ -15,7 +15,7 @@ class Solution:
         l2 = l2.next
 
         while True:
-            if (l1 is not None and l2 is not None):
+            if (l1 and l2):
                 add = l1.val + l2.val + carry
                 carry = add // 10
                 next_node = ListNode(add % 10)
@@ -23,14 +23,14 @@ class Solution:
                 prev_node = next_node
                 l1 = l1.next
                 l2 = l2.next
-            elif (l1 is not None):
+            elif (l1):
                 add = l1.val + carry
                 carry = add // 10
                 next_node = ListNode(add % 10)
                 prev_node.next = next_node
                 prev_node = next_node
                 l1 = l1.next
-            elif (l2 is not None):
+            elif (l2):
                 add = l2.val + carry
                 carry = add // 10
                 next_node = ListNode(add % 10)
