@@ -22,6 +22,7 @@ Cracking the LeetCode with multiple programming language
 | 14     | [Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/)                                                   | Easy       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 15     | [3Sum](https://leetcode.com/problems/3sum/)                                                                                     | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 16     | [3Sum Closest](https://leetcode.com/problems/3sum-closest/)                                                                     | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 17     | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/)                   | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Concurrency
 
