@@ -1,31 +1,40 @@
 import "math"
 
 func myAtoi(str string) int {
-	res, sign, len, idx := 0, 1, len(str), 0
+	var (
+		ans   int64
+		start bool
+		sign  = 1
+	)
 
-	for idx < len && (str[idx] == ' ' || str[idx] == '\t') {
-		idx++
-	}
-
-	if idx < len {
-		if str[idx] == '+' {
-			sign = 1
-			idx++
-		} else if str[idx] == '-' {
-			sign = -1
-			idx++
+	for _, v := range str {
+		if '0' <= v && v <= '9' {
+			start = true
+			ans = ans*10 + int64(v-'0')
+			if ans >= math.MaxInt32+1 {
+				break
+			}
+		} else if !start && v == ' ' {
+			continue
+		} else if !start && v == '+' {
+			start = true
+		} else if !start && v == '-' {
+			sign = -sign
+			start = true
+		} else {
+			break
 		}
 	}
 
-	for idx < len && str[idx] >= '0' && str[idx] <= '9' {
-		res = res*10 + int(str[idx]) - '0'
-		if sign*res > math.MaxInt32 {
-			return math.MaxInt32
-		} else if sign*res < math.MinInt32 {
-			return math.MinInt32
-		}
-		idx++
+	ans *= int64(sign)
+
+	if ans > math.MaxInt32 {
+		ans = math.MaxInt32
 	}
 
-	return res * sign
+	if ans < math.MinInt32 {
+		ans = math.MinInt32
+	}
+
+	return int(ans)
 }
