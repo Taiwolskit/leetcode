@@ -48,3 +48,4 @@ Cracking the LeetCode with multiple programming language
 | Number | Title                                                                       | Difficulty | Bash               |
 | ------ | --------------------------------------------------------------------------- | ---------- | ------------------ |
 | 192    | [Word Frequency](https://leetcode.com/problems/word-frequency/submissions/) | Medium     | :heavy_check_mark: |
+| 193    | [Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/)   | Easy       | :heavy_check_mark: |
