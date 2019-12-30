@@ -30,6 +30,7 @@ Cracking the LeetCode with multiple programming language
 | 22     | [Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)                                                     | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 23     | [Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)                                                     | Hard       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 24     | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)                                                       | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 25     | [Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)                                                       | Hard     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Concurrency
 
