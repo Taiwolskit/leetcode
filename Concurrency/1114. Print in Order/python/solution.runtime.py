@@ -3,24 +3,24 @@ import threading
 
 class Foo:
     def __init__(self):
-        self.f1 = threading.Event()
-        self.f2 = threading.Event()
+        self.l2 = threading.Lock()
+        self.l2.acquire()
+        self.l3 = threading.Lock()
+        self.l3.acquire()
 
     def first(self, printFirst: 'Callable[[], None]') -> None:
 
         # printFirst() outputs "first". Do not change or remove this line.
         printFirst()
-        self.f1.set()
+        self.l2.release()
 
     def second(self, printSecond: 'Callable[[], None]') -> None:
-
+        self.l2.acquire()
         # printSecond() outputs "second". Do not change or remove this line.
-        self.f1.wait()
         printSecond()
-        self.f2.set()
+        self.l3.release()
 
     def third(self, printThird: 'Callable[[], None]') -> None:
-
+        self.l3.acquire()
         # printThird() outputs "third". Do not change or remove this line.
-        self.f2.wait()
         printThird()
