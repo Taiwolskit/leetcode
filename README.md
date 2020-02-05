@@ -41,9 +41,10 @@ Cracking the LeetCode with multiple programming language
 
 ## Database
 
-| Number | Title                                                                    | Difficulty | MySQL |
-| ------ | ------------------------------------------------------------------------ | ---------- | ----- |
-| 175    | [Combine Two Tables ](https://leetcode.com/problems/combine-two-tables/) | Easy       |       |
+| Number | Title                                                                         | Difficulty | MySQL |
+| ------ | ----------------------------------------------------------------------------- | ---------- | ----- |
+| 175    | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)       | Easy       |       |
+| 176    | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Easy       |       |
 
 ## Shell
 
