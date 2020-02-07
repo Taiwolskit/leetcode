@@ -46,6 +46,7 @@ Cracking the LeetCode with multiple programming language
 | 175    | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)       | Easy       | :heavy_check_mark: |
 | 176    | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Easy       | :heavy_check_mark: |
 | 177    | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)       | Medium     | :heavy_check_mark: |
+| 178    | [Rank Scores](https://leetcode.com/problems/rank-scores/)                     | Medium     | :heavy_check_mark: |
 
 ## Shell
 
