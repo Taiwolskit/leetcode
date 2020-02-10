@@ -47,6 +47,7 @@ Cracking the LeetCode with multiple programming language
 | 176    | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Easy       | :heavy_check_mark: |
 | 177    | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)       | Medium     | :heavy_check_mark: |
 | 178    | [Rank Scores](https://leetcode.com/problems/rank-scores/)                     | Medium     | :heavy_check_mark: |
+| 180    | [Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/)     | Medium     | :heavy_check_mark: |
 
 ## Shell
 
