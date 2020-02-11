@@ -41,13 +41,14 @@ Cracking the LeetCode with multiple programming language
 
 ## Database
 
-| Number | Title                                                                         | Difficulty | MySQL              |
-| ------ | ----------------------------------------------------------------------------- | ---------- | ------------------ |
-| 175    | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)       | Easy       | :heavy_check_mark: |
-| 176    | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/) | Easy       | :heavy_check_mark: |
-| 177    | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)       | Medium     | :heavy_check_mark: |
-| 178    | [Rank Scores](https://leetcode.com/problems/rank-scores/)                     | Medium     | :heavy_check_mark: |
-| 180    | [Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/)     | Medium     | :heavy_check_mark: |
+| Number | Title                                                                                                                   | Difficulty | MySQL              |
+| ------ | ----------------------------------------------------------------------------------------------------------------------- | ---------- | ------------------ |
+| 175    | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)                                                 | Easy       | :heavy_check_mark: |
+| 176    | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)                                           | Easy       | :heavy_check_mark: |
+| 177    | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)                                                 | Medium     | :heavy_check_mark: |
+| 178    | [Rank Scores](https://leetcode.com/problems/rank-scores/)                                                               | Medium     | :heavy_check_mark: |
+| 180    | [Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/)                                               | Medium     | :heavy_check_mark: |
+| 181    | [Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/) | Easy       | :heavy_check_mark: |
 
 ## Shell
 
