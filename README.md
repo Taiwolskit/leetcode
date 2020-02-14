@@ -50,6 +50,7 @@ Cracking the LeetCode with multiple programming language
 | 180    | [Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/)                                               | Medium     | :heavy_check_mark: |
 | 181    | [Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/) | Easy       | :heavy_check_mark: |
 | 182    | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)                                                     | Easy       | :heavy_check_mark: |
+| 183    | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)                                   | Easy       | :heavy_check_mark: |
 
 ## Shell
 
