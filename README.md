@@ -51,6 +51,7 @@ Cracking the LeetCode with multiple programming language
 | 181    | [Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/) | Easy       | :heavy_check_mark: |
 | 182    | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)                                                     | Easy       | :heavy_check_mark: |
 | 183    | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)                                   | Easy       | :heavy_check_mark: |
+| 184    | [Department Highest Salary](https://leetcode.com/problems/customers-who-never-order/)                                   | Medium     | :heavy_check_mark: |
 
 ## Shell
 
