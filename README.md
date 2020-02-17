@@ -52,6 +52,7 @@ Cracking the LeetCode with multiple programming language
 | 182    | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)                                                     | Easy       | :heavy_check_mark: |
 | 183    | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)                                   | Easy       | :heavy_check_mark: |
 | 184    | [Department Highest Salary](https://leetcode.com/problems/customers-who-never-order/)                                   | Medium     | :heavy_check_mark: |
+| 185    | [Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/)                           | Hard       | :heavy_check_mark: |
 
 ## Shell
 
