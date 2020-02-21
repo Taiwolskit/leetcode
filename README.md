@@ -55,6 +55,7 @@ Cracking the LeetCode with multiple programming language
 | 185    | [Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/)                           | Hard       | :heavy_check_mark: |
 | 196    | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)                                       | Easy       | :heavy_check_mark: |
 | 197    | [Rising Temperature](https://leetcode.com/problems/rising-temperature/)                                                 | Easy       | :heavy_check_mark: |
+| 262    | [Trips and Users](https://leetcode.com/problems/trips-and-users/)                                                       | Hard       | :heavy_check_mark: |
 
 ## Shell
 
