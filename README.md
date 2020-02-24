@@ -56,6 +56,8 @@ Cracking the LeetCode with multiple programming language
 | 196    | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)                                       | Easy       | :heavy_check_mark: |
 | 197    | [Rising Temperature](https://leetcode.com/problems/rising-temperature/)                                                 | Easy       | :heavy_check_mark: |
 | 262    | [Trips and Users](https://leetcode.com/problems/trips-and-users/)                                                       | Hard       | :heavy_check_mark: |
+| 262    | [Trips and Users](https://leetcode.com/problems/trips-and-users/)                                                       | Hard       | :heavy_check_mark: |
+| 595    | [Big Countries](https://leetcode.com/problems/big-countries/)                                                           | Easy       | :heavy_check_mark: |
 
 ## Shell
 
