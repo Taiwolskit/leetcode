@@ -59,6 +59,7 @@ Cracking the LeetCode with multiple programming language
 | 262    | [Trips and Users](https://leetcode.com/problems/trips-and-users/)                                                       | Hard       | :heavy_check_mark: |
 | 595    | [Big Countries](https://leetcode.com/problems/big-countries/)                                                           | Easy       | :heavy_check_mark: |
 | 596    | [Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/)                             | Easy       | :heavy_check_mark: |
+| 601    | [Human Traffic of Stadium](https://leetcode.com/problems/human-traffic-of-stadium/)                                     | Hard       | :heavy_check_mark: |
 
 ## Shell
 
