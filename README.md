@@ -62,6 +62,8 @@ Cracking the LeetCode with multiple programming language
 | 601    | [Human Traffic of Stadium](https://leetcode.com/problems/human-traffic-of-stadium/)                                     | Hard       | :heavy_check_mark: |
 | 620    | [Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)                                                   | Easy       | :heavy_check_mark: |
 | 626    | [Exchange Seats](https://leetcode.com/problems/exchange-seats/)                                                         | Medium     | :heavy_check_mark: |
+| 626    | [Exchange Seats](https://leetcode.com/problems/exchange-seats/)                                                         | Medium     | :heavy_check_mark: |
+| 627    | [Swap Salary](https://leetcode.com/problems/swap-salary/)                                                               | Easy       | :heavy_check_mark: |
 
 ## Shell
 
