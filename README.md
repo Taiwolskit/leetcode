@@ -64,6 +64,7 @@ Cracking the LeetCode with multiple programming language
 | 626    | [Exchange Seats](https://leetcode.com/problems/exchange-seats/)                                                         | Medium     | :heavy_check_mark: |
 | 626    | [Exchange Seats](https://leetcode.com/problems/exchange-seats/)                                                         | Medium     | :heavy_check_mark: |
 | 627    | [Swap Salary](https://leetcode.com/problems/swap-salary/)                                                               | Easy       | :heavy_check_mark: |
+| 627    | [Swap Salary](https://leetcode.com/problems/swap-salary/)                                                               | Easy       | :heavy_check_mark: |
 
 ## Shell
 
@@ -71,3 +72,5 @@ Cracking the LeetCode with multiple programming language
 | ------ | --------------------------------------------------------------------------- | ---------- | ------------------ |
 | 192    | [Word Frequency](https://leetcode.com/problems/word-frequency/submissions/) | Medium     | :heavy_check_mark: |
 | 193    | [Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/)   | Easy       | :heavy_check_mark: |
+| 194    | [Transpose File](https://leetcode.com/problems/transpose-file/)             | Medium     | :heavy_check_mark: |
+| 195    | [Tenth Line](https://leetcode.com/problems/tenth-line/)                     | Easy       | :heavy_check_mark: |
