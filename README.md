@@ -39,6 +39,8 @@ Cracking the LeetCode with multiple programming language
 | 1114   | [Print in Order](https://leetcode.com/problems/print-in-order/)                     | Easy       | :heavy_check_mark: |
 | 1115   | [Print FooBar Alternately](https://leetcode.com/problems/print-foobar-alternately/) | Medium     | :heavy_check_mark: |
 | 1116   | [Print Zero Even Odd](https://leetcode.com/problems/print-zero-even-odd/)           | Medium     | :heavy_check_mark: |
+| 1117   | [Building H2O](https://leetcode.com/problems/building-h2o/)                         | Medium     | :heavy_check_mark: |
+| 1195   | [Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded/)   | Medium     | :heavy_check_mark: |
 
 ## Database
 
