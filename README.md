@@ -41,6 +41,7 @@ Cracking the LeetCode with multiple programming language
 | 1116   | [Print Zero Even Odd](https://leetcode.com/problems/print-zero-even-odd/)           | Medium     | :heavy_check_mark: |
 | 1117   | [Building H2O](https://leetcode.com/problems/building-h2o/)                         | Medium     | :heavy_check_mark: |
 | 1195   | [Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded/)   | Medium     | :heavy_check_mark: |
+| 1226   | [The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers/)   | Medium     | :heavy_check_mark: |
 
 ## Database
 
