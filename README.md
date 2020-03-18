@@ -68,7 +68,7 @@ Cracking the LeetCode with multiple programming language
 | 626    | [Exchange Seats](https://leetcode.com/problems/exchange-seats/)                                                         | Medium     | :heavy_check_mark: |
 | 626    | [Exchange Seats](https://leetcode.com/problems/exchange-seats/)                                                         | Medium     | :heavy_check_mark: |
 | 627    | [Swap Salary](https://leetcode.com/problems/swap-salary/)                                                               | Easy       | :heavy_check_mark: |
-| 627    | [Swap Salary](https://leetcode.com/problems/swap-salary/)                                                               | Easy       | :heavy_check_mark: |
+| 1179   | [Reformat Department Table](https://leetcode.com/problems/reformat-department-table/)                                   | Easy       | :heavy_check_mark: |
 
 ## Shell
 
