@@ -34,7 +34,8 @@ Cracking the LeetCode with multiple programming language
 | 26     | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)                       | Easy       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 27     | [Remove Element](https://leetcode.com/problems/remove-element/)                                                                 | Easy       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 28     | [Implement strStr()](https://leetcode.com/problems/implement-strstr/)                                                           | Easy       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| 29     | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)                                                       | Easy       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 29     | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)                                                       | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 30     | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)           | Hard       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Concurrency
 
