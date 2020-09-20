@@ -36,6 +36,7 @@ Cracking the LeetCode with multiple programming language
 | 28     | [Implement strStr()](https://leetcode.com/problems/implement-strstr/)                                                           | Easy       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 29     | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)                                                       | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 30     | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)           | Hard       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 31     | [Next Permutation](https://leetcode.com/problems/next-permutation/)                                                             | Hard       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Concurrency
 
