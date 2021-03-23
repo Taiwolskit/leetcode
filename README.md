@@ -36,7 +36,8 @@ Cracking the LeetCode with multiple programming language
 | 28     | [Implement strStr()](https://leetcode.com/problems/implement-strstr/)                                                           | Easy       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 29     | [Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)                                                       | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 30     | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)           | Hard       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| 31     | [Next Permutation](https://leetcode.com/problems/next-permutation/)                                                             | Hard       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 31     | [Next Permutation](https://leetcode.com/problems/next-permutation/)                                                             | Medium     | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 32     | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)                                           | Hard       | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Concurrency
 
@@ -78,9 +79,9 @@ Cracking the LeetCode with multiple programming language
 
 ## Shell
 
-| Number | Title                                                                       | Difficulty | Bash               |
-| ------ | --------------------------------------------------------------------------- | ---------- | ------------------ |
-| 192    | [Word Frequency](https://leetcode.com/problems/word-frequency/submissions/) | Medium     | :heavy_check_mark: |
-| 193    | [Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/)   | Easy       | :heavy_check_mark: |
-| 194    | [Transpose File](https://leetcode.com/problems/transpose-file/)             | Medium     | :heavy_check_mark: |
-| 195    | [Tenth Line](https://leetcode.com/problems/tenth-line/)                     | Easy       | :heavy_check_mark: |
+| Number | Title                                                                       | Difficulty | Solution           | Bash               |
+| ------ | --------------------------------------------------------------------------- | ---------- | ------------------ | ------------------ |
+| 192    | [Word Frequency](https://leetcode.com/problems/word-frequency/submissions/) | Medium     |                    | :heavy_check_mark: |
+| 193    | [Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/)   | Easy       | :heavy_check_mark: | :heavy_check_mark: |
+| 194    | [Transpose File](https://leetcode.com/problems/transpose-file/)             | Medium     |                    | :heavy_check_mark: |
+| 195    | [Tenth Line](https://leetcode.com/problems/tenth-line/)                     | Easy       | :heavy_check_mark: | :heavy_check_mark: |

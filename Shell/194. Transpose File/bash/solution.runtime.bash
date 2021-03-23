@@ -1,5 +1,18 @@
 # Read from the file file.txt and print its transposed content to stdout.
 #!/bin/bash
 
-nlines=$(head -n1 file.txt | tr -s ' ' '\n' | wc -l)
-seq 1 $nlines | xargs -I '{}' sh -c "cut -f'{}' -d' ' file.txt | tr -s '\n' ' ' ; printf '\n'" | awk '{$1=$1};1'
+awk '
+{
+    for (i = 1; i <= NF; i++) {
+        if(NR == 1) {
+            s[i] = $i;
+        } else {
+            s[i] = s[i] " " $i;
+        }
+    }
+}
+END {
+    for (i = 1; s[i] != ""; i++) {
+        print s[i];
+    }
+}' file.txt
