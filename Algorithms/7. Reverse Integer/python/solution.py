@@ -4,12 +4,11 @@ class Solution:
         :type x: int
         :rtype: int
         """
-        max = pow(2, 31)
-        if x < 0:
-            result = -1 * int(str(-x)[::-1])
-        else:
+        if x > 0:
             result = int(str(x)[::-1])
+        else:
+            result = -1 * int(str(-x)[::-1])
 
-        if result > max or result < -max:
+        if result > (2**31 - 1) or result < -(2**31):
             result = 0
         return result

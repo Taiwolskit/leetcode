@@ -2,7 +2,7 @@
  * @param {number} x
  * @return {number}
  */
-var reverse = function(x) {
+var reverse = function (x) {
   const isNeg = 0 > x ? -1 : 1;
   let result = 0;
   let absx = Math.abs(x);
@@ -13,3 +13,10 @@ var reverse = function(x) {
   if (result < Math.pow(-2, 31) || result > Math.pow(2, 31) - 1) return 0;
   return result * isNeg;
 };
+
+// var reverse = function (x) {
+//   const isNegative = x < 0 ? -1 : 1;
+//   const reverseN = Number(Math.abs(x).toString().split('').reverse().join(''));
+//   if (reverseN > 0x7fffffff) return 0;
+//   return reverseN * isNegative || 0;
+// };
