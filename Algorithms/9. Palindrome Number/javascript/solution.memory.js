@@ -2,15 +2,15 @@
  * @param {number} x
  * @return {boolean}
  */
-var isPalindrome = function(x) {
-  if (x < 0) return false;
-  else if (x < 10) return true;
-
-  let revX = 0;
-  let tmp = x;
-  while (0 < tmp) {
-    revX = revX * 10 + (tmp % 10);
-    tmp = Math.trunc(tmp / 10);
+var isPalindrome = function (x) {
+  if (x < 0) {
+    return false;
   }
-  return revX === x;
+  let reverse = 0;
+
+  for (let i = x; i >= 1; i = Math.floor(i / 10)) {
+    reverse = reverse * 10 + (i % 10);
+  }
+
+  return reverse === x;
 };

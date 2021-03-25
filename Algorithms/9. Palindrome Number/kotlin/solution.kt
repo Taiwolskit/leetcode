@@ -7,11 +7,11 @@ class Solution {
         } else {
             var temp = 0
             var input = x
-        
+
             while (input > temp) {
                 temp = temp * 10 + input % 10
                 input /= 10
-            }    
+            }
 
             input == temp || input == temp / 10
         }

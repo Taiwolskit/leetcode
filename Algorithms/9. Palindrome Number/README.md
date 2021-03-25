@@ -1,6 +1,8 @@
 # [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/)
 
-Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
+Given an integer `x`, return `true` if `x` is palindrome integer.
+
+An integer is a **palindrome** when it reads the same backward as forward. For example, `121` is palindrome while `123` is not.
 
 **Example 1:**
 
@@ -19,9 +21,16 @@ Determine whether an integer is a palindrome. An integer is a palindrome when it
     Output: false
     Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
-**Follow up:**
+**Example 4:**
 
-Coud you solve it without converting the integer to a string?
+    Input: x = -101
+    Output: false
+
+**Constraints:**
+
+- `$-2^31$ <= x <= $2^31$ - 1`
+
+**Follow up:** Coud you solve it without converting the integer to a string?
 
 **Hint 1:**
 
