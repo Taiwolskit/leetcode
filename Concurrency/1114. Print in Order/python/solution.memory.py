@@ -1,24 +1,28 @@
-from threading import Barrier
+from threading import Lock
 
 
 class Foo:
     def __init__(self):
-        self.first_barrier = Barrier(2)
-        self.second_barrier = Barrier(2)
+        self.first_job_done = Lock()
+        self.second_job_done = Lock()
+        self.first_job_done.acquire()
+        self.second_job_done.acquire()
 
     def first(self, printFirst: 'Callable[[], None]') -> None:
 
         # printFirst() outputs "first". Do not change or remove this line.
         printFirst()
-        self.first_barrier.wait()
+        self.first_job_done.release()
 
     def second(self, printSecond: 'Callable[[], None]') -> None:
-        self.first_barrier.wait()
+
         # printSecond() outputs "second". Do not change or remove this line.
-        printSecond()
-        self.second_barrier.wait()
+        with self.first_job_done:
+            printSecond()
+        self.second_job_done.release()
 
     def third(self, printThird: 'Callable[[], None]') -> None:
-        self.second_barrier.wait()
+
         # printThird() outputs "third". Do not change or remove this line.
-        printThird()
+        with self.second_job_done:
+            printThird()

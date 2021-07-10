@@ -1,4 +1,4 @@
-# [192. Word Frequency](https://leetcode.com/problems/word-frequency/submissions/)
+# [192. Word Frequency](https://leetcode.com/problems/word-frequency/)
 
 Write a bash script to calculate the frequency of each word in a text file `words.txt`.
 

@@ -1,25 +1,44 @@
 # [1195. Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded/)
 
-Write a program that outputs the string representation of numbers from 1 to n, however:
+You have the four functions:
 
-- If the number is divisible by 3, output "fizz".
-- If the number is divisible by 5, output "buzz".
-- If the number is divisible by both 3 and 5, output "fizzbuzz".
-  For example, for `n = 15`, we output: `1`, `2`, `fizz`, `4`, `buzz`, `fizz`, `7`, `8`, `fizz`, `buzz`, `11`, `fizz`, `13`, `14`, `fizzbuzz`.
+- `printFizz` that prints the word `"Fizz"` to the console,
+- `printBuzz` that prints the word `"Buzz"` to the console,
+- `printFizzBuzz` that prints the word `"FizzBuzz"` to the console, and
+- `printNumber` that prints a given integer to the console.
 
-Suppose you are given the following code:
+You are given an instance of the class `FizzBuzz` that has four functions: `fizz`, `buzz`, `fizzbuzz` and `number`. The same instance of `FizzBuzz` will be passed to four different threads:
 
-    class FizzBuzz {
-    public FizzBuzz(int n) { ... }               // constructor
-    public void fizz(printFizz) { ... }          // only output "fizz"
-    public void buzz(printBuzz) { ... }          // only output "buzz"
-    public void fizzbuzz(printFizzBuzz) { ... }  // only output "fizzbuzz"
-    public void number(printNumber) { ... }      // only output the numbers
-    }
+- **Thread A**: calls `fizz()` that should output the word `"Fizz"`.
+- **Thread B**: calls `buzz()` that should output the word `"Buzz"`.
+- **Thread C**: calls `fizzbuzz()` that should output the word `"FizzBuzz"`.
+- **Thread D**: calls `number()` that should only output the integers.
 
-Implement a multithreaded version of `FizzBuzz` with four threads. The same instance of `FizzBuzz` will be passed to four different threads:
+Modify the given class to output the series `[1, 2, "Fizz", 4, "Buzz", ...]` where the `ith` token (**1-indexed**) of the series is:
 
-1. Thread A will call `fizz()` to check for divisibility of 3 and outputs `fizz`.
-2. Thread B will call `buzz()` to check for divisibility of 5 and outputs `buzz`.
-3. Thread C will call `fizzbuzz()` to check for divisibility of 3 and 5 and outputs `fizzbuzz`.
-4. Thread D will call `number()` which should only output the numbers.
+- `"FizzBuzz"` if `i` is divisible by `3` and `5`,
+- `"Fizz"` if `i` is divisible by `3` and not `5`,
+- `"Buzz"` if `i` is divisible by `5` and not `3`, or
+- `i` if `i` is not divisible by `3` or `5`.
+
+Implement the `FizzBuzz` class:
+
+- `FizzBuzz(int n)` Initializes the object with the number `n` that represents the length of the sequence that should be printed.
+- `void fizz(printFizz)` Calls `printFizz` to output `"Fizz"`.
+- `void buzz(printBuzz)` Calls `printBuzz` to output `"Buzz"`.
+- `void fizzbuzz(printFizzBuzz)` Calls `printFizzBuzz` to output `"FizzBuzz"`.
+- `void number(printNumber)` Calls `printnumber` to output the numbers.
+
+**Example 1:**
+
+Input: n = 15
+Output: [1,2,"fizz",4,"buzz","fizz",7,8,"fizz","buzz",11,"fizz",13,14,"fizzbuzz"]
+
+**Example 2:**
+
+Input: n = 5
+Output: [1,2,"fizz",4,"buzz"]
+
+**Constraints:**
+
+- `1 <= n <= 50`

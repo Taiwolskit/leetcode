@@ -1,21 +1,23 @@
 # [1116. Print Zero Even Odd](https://leetcode.com/problems/print-zero-even-odd/)
 
-Suppose you are given the following code:
+You have a function `printNumber` that can be called with an integer parameter and prints it to the console.
 
-    class ZeroEvenOdd {
-        public ZeroEvenOdd(int n) { ... }      // constructor
-        public void zero(printNumber) { ... }  // only output 0's
-        public void even(printNumber) { ... }  // only output even numbers
-        public void odd(printNumber) { ... }   // only output odd numbers
-    }
+- For example, calling `printNumber(7)` prints 7 to the console.
 
-The same instance of `ZeroEvenOdd` will be passed to three different threads:
+You are given an instance of the class `ZeroEvenOdd` that has three functions: `zero`, `even`, and `odd`. The same instance of `ZeroEvenOdd` will be passed to three different threads:
 
-1. Thread A will call `zero()` which should only output 0's.
-2. Thread B will call `even()` which should only ouput even numbers.
-3. Thread C will call `odd()` which should only output odd numbers.
+- **Thread A**: calls `zero()` that should only output `0`'s.
+- **Thread B**: calls `even()` that should only output even numbers.
+- **Thread C**: calls `odd()` that should only output odd numbers.
 
-Each of the threads is given a `printNumber` method to output an integer. Modify the given program to output the series `010203040506`... where the length of the series must be 2n.
+Modify the given class to output the series `"010203040506..."` where the length of the series must be `2n`.
+
+Implement the `ZeroEvenOdd` class:
+
+- `ZeroEvenOdd(int n)` Initializes the object with the number `n` that represents the numbers that should be printed.
+- `void zero(printNumber)` Calls `printNumber` to output one zero.
+- `void even(printNumber)` Calls `printNumber` to output one even number.
+- `void odd(printNumber)` Calls `printNumber` to output one odd number.
 
 **Example 1:**
 
