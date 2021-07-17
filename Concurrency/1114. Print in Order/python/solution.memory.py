@@ -1,28 +1,20 @@
-from threading import Lock
-
-
 class Foo:
-    def __init__(self):
-        self.first_job_done = Lock()
-        self.second_job_done = Lock()
-        self.first_job_done.acquire()
-        self.second_job_done.acquire()
+    call = 0
 
     def first(self, printFirst: 'Callable[[], None]') -> None:
-
         # printFirst() outputs "first". Do not change or remove this line.
         printFirst()
-        self.first_job_done.release()
+        self.call = 1
 
     def second(self, printSecond: 'Callable[[], None]') -> None:
-
+        while self.call != 1:
+            continue
         # printSecond() outputs "second". Do not change or remove this line.
-        with self.first_job_done:
-            printSecond()
-        self.second_job_done.release()
+        printSecond()
+        self.call = 2
 
     def third(self, printThird: 'Callable[[], None]') -> None:
-
+        while self.call != 2:
+            continue
         # printThird() outputs "third". Do not change or remove this line.
-        with self.second_job_done:
-            printThird()
+        printThird()

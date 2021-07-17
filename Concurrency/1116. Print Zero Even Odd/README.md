@@ -2,7 +2,7 @@
 
 You have a function `printNumber` that can be called with an integer parameter and prints it to the console.
 
-- For example, calling `printNumber(7)` prints 7 to the console.
+- For example, calling `printNumber(7)` prints `7` to the console.
 
 You are given an instance of the class `ZeroEvenOdd` that has three functions: `zero`, `even`, and `odd`. The same instance of `ZeroEvenOdd` will be passed to three different threads:
 
@@ -29,3 +29,7 @@ Implement the `ZeroEvenOdd` class:
 
     Input: n = 5
     Output: "0102030405"
+
+**Constraints:**
+
+- `1 <= n <= 1000`
