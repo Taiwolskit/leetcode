@@ -1,11 +1,15 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        cache = {}
-        res = start = 0
-        for idx, char in enumerate(s):
-            if char in cache and start <= cache[char]:
-                start = cache[char] + 1
+        if s == "":
+            return 0
+        temp = result = ""
+        for sub in s:
+            if sub in temp:
+                if len(temp) > len(result):
+                    result = temp
+                temp = temp.split(sub)[1] + sub
             else:
-                res = max(idx - start + 1, res)
-            cache[char] = idx
-        return res
+                temp += sub
+        if len(temp) > len(result):
+            result = temp
+        return len(result)

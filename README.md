@@ -38,6 +38,10 @@ Cracking the LeetCode with multiple programming language
 | 30     | [Substring with Concatenation of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)           | Hard       |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 31     | [Next Permutation](https://leetcode.com/problems/next-permutation/)                                                             | Medium     |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 32     | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/)                                           | Hard       |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 46     | [Permutations](https://leetcode.com/problems/permutations/)                                                                     | Medium     |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 104    | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)                                     | Easy       |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 237    | [Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)                                     | Easy       |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| 344    | [Reverse String](https://leetcode.com/problems/reverse-string/)                                                                 | Easy       |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Concurrency
 

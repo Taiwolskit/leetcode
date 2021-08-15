@@ -1,24 +1,23 @@
+const findIndex = (s, start, end, target) => {
+    for (let j = start; j < end; j++) {
+        if (s[j] === target) {
+            return j;
+        }
+    }
+    return -1;
+};
+
 /**
  * @param {string} s
  * @return {number}
  */
-var lengthOfLongestSubstring = function(s) {
-  let max = 0;
-  let left = 0;
-  let right = 0;
-  const set = [];
-
-  while (right < s.length) {
-    const key = s.charAt(right);
-    if (!set.includes(key)) {
-      set.push(key);
-      right++;
-      max = Math.max(max, right - left);
-    } else {
-      set.shift();
-      left++;
+var lengthOfLongestSubstring = function (s) {
+    if (!s) return 0;
+    let largest = 0,
+        start = 0;
+    for (let i = 0; i < s.length; i++) {
+        start = Math.max(findIndex(s, start, i, s[i]) + 1, start);
+        largest = Math.max(i - start + 1, largest);
     }
-  }
-
-  return max;
+    return largest;
 };
