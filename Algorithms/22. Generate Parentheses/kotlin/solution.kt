@@ -1,5 +1,5 @@
 class Solution {
-	fun generateParenthesis(n: Int): List<String> {
+    fun generateParenthesis(n: Int): List<String> {
         val result = ArrayList<String>()
         backtrack(result, "", n, n)
         return result
@@ -10,7 +10,7 @@ class Solution {
             result.add(S)
         }
 
-        if (left > right) return 
+        if (left > right) return
         if (left > 0) backtrack(result, S + "(", left - 1, right)
         if (right > 0) backtrack(result, S + ")", left, right - 1)
     }
