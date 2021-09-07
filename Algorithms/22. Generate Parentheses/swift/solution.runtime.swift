@@ -8,11 +8,11 @@ class Solution {
                 return
             }
 
-            if left < n {
+            if n > left {
                 backtrack(S+"(", left+1, right)
             }
 
-            if right < left {
+            if left > right {
                 backtrack(S+")", left, right+1)
             }
         }

@@ -10,8 +10,8 @@ var generateParenthesis = function (n) {
             result.push(S);
             return;
         }
-        if (left < n) backtrack(`${S}(`, left + 1, right);
-        if (right < left) backtrack(`${S})`, left, right + 1);
+        if (n > left) backtrack(`${S}(`, left + 1, right);
+        if (left > right) backtrack(`${S})`, left, right + 1);
     };
 
     backtrack();

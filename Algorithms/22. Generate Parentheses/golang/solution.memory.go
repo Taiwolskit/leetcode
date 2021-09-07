@@ -8,11 +8,11 @@ func backtrack(ans []string, cur string, left, right, max int) []string {
 		return ans
 	}
 
-	if left < max {
+	if max > left {
 		ans = backtrack(ans, cur+"(", left+1, right, max)
 	}
 
-	if right < left {
+	if left > right {
 		ans = backtrack(ans, cur+")", left, right+1, max)
 	}
 

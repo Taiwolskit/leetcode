@@ -7,6 +7,7 @@
 2. Backtracking
     * Time: O(4^n / spare(n))
     * Space: O(4^n / spare(n))
+    * http://jluyeyu.leanote.com/post/acd7c880fbf1
 3. Closure Number
     * Time: O(4^n / spare(n))
     * Space: O(4^n / spare(n))
