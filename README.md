@@ -49,6 +49,7 @@ Cracking the LeetCode with multiple programming language
 | 764    | [Largest Plus Sign](https://leetcode.com/problems/largest-plus-sign/)                                                           | Medium     |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 848    | [Shifting Letters](https://leetcode.com/problems/shifting-letters/)                                                             | Medium     |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 882    | [Reachable Nodes In Subdivided Graph](https://leetcode.com/problems/reachable-nodes-in-subdivided-graph/)                       | Hard       |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |                    |
+| 1189   | [Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/)                                         | Easy       |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | 1629   | [Slowest Key](https://leetcode.com/problems/slowest-key/)                                                                       | Easy       |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 
 ## Concurrency
