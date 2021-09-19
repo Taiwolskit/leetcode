@@ -3,7 +3,6 @@ func addOperators(num string, target int) []string {
 	var buf = make([]byte, len(num)*2) // shared bytes buffer
 
 	search(num, target, &ret, 0, 0, buf, 0)
-
 	return ret
 }
 

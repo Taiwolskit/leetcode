@@ -3,7 +3,6 @@ class Solution {
         var numArr = Array(num).map {Int(String($0))!}
         var result = [String]()
         helper(numArr, target, 0, 0, 0, "", &result)
-
         return result
     }
 
