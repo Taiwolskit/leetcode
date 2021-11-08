@@ -1,9 +1,9 @@
-import threading
+from threading import Lock
 
 
 class DiningPhilosophers:
-    def __init__(self):
-        self.forks = [threading.Lock() for _ in range(5)]
+
+    forks = [Lock() for _ in range(5)]
 
     # call the functions directly to execute, for example, eat()
     def wantsToEat(self,
@@ -13,14 +13,24 @@ class DiningPhilosophers:
                    eat: 'Callable[[], None]',
                    putLeftFork: 'Callable[[], None]',
                    putRightFork: 'Callable[[], None]') -> None:
-        first = philosopher
-        second = (philosopher + 1) % 5
-        if first > second:
-            first, second = second, first
 
-        with self.forks[first], self.forks[second]:
-            pickLeftFork()
-            pickRightFork()
-            eat()
-            putLeftFork()
-            putRightFork()
+        i = philosopher
+        right_fork = i
+        left_fork = (i+1) % 5
+        if i % 2 == 0:
+            self.forks[right_fork].acquire()
+            self.forks[left_fork].acquire()
+        else:
+            self.forks[left_fork].acquire()
+            self.forks[right_fork].acquire()
+        pickRightFork()
+        pickLeftFork()
+        eat()
+        putLeftFork()
+        putRightFork()
+        if i % 2 == 0:
+            self.forks[left_fork].release()
+            self.forks[right_fork].release()
+        else:
+            self.forks[right_fork].release()
+            self.forks[left_fork].release()

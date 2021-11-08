@@ -25,3 +25,7 @@ We do not know how the threads will be scheduled in the operating system, even t
     Input: [1,3,2]
     Output: "firstsecondthird"
     Explanation: The input [1,3,2] means thread A calls first(), thread B calls third(), and thread C calls second(). "firstsecondthird" is the correct output.
+
+**Constraints:**
+
+- `nums` is a permutation of `[1, 2, 3]`.

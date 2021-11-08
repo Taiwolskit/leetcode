@@ -16,7 +16,10 @@ Suppose you are given the following code:
       }
     }
 
-The same instance of `FooBar` will be passed to two different threads. Thread A will call `foo()` while thread B will call `bar()`. Modify the given program to output "foobar" _n_ times.
+The same instance of `FooBar` will be passed to two different threads:
+
+- thread `A` will call `foo()`, while
+- thread `B` will call `bar()`.
 
 **Example 1:**
 
@@ -29,3 +32,7 @@ The same instance of `FooBar` will be passed to two different threads. Thread A 
     Input: n = 2
     Output: "foobarfoobar"
     Explanation: "foobar" is being output 2 times.
+
+**Constraints:**
+
+- `1 <= n <= 1000`

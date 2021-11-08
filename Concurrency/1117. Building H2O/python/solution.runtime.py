@@ -1,25 +1,25 @@
-import threading
+from threading import Semaphore, Lock
 
 
 class H2O:
     def __init__(self):
-        self.h_lock = threading.Lock()
-        self.o_lock = threading.Lock()
-        self.o_lock.acquire()
-        self.hydrogen_counter = 0
+        self._lock_h = Semaphore(2)
+        self._lock_o = Semaphore(1)
+        self._lock_o.acquire()
+        self._lock_acquire_o = Lock()
 
-    def hydrogen(self, releaseHydrogen) -> None:
-        self.h_lock.acquire()
+    def hydrogen(self, releaseHydrogen: 'Callable[[], None]') -> None:
+        self._lock_h.acquire()
+        # releaseHydrogen() outputs "H". Do not change or remove this line.
         releaseHydrogen()
-        self.hydrogen_counter = self.hydrogen_counter + 1
+        self._lock_o.release()
 
-        if self.hydrogen_counter == 2:
-            self.o_lock.release()
-        elif self.hydrogen_counter < 2:
-            self.h_lock.release()
-
-    def oxygen(self, releaseOxygen) -> None:
-        self.o_lock.acquire()
-        self.hydrogen_counter = 0
+    def oxygen(self, releaseOxygen: 'Callable[[], None]') -> None:
+        self._lock_acquire_o.acquire()
+        self._lock_o.acquire()
+        self._lock_o.acquire()
+        self._lock_acquire_o.release()
+        # releaseOxygen() outputs "O". Do not change or remove this line.
         releaseOxygen()
-        self.h_lock.release()
+        self._lock_h.release()
+        self._lock_h.release()

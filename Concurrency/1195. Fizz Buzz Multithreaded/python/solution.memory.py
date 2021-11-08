@@ -4,49 +4,60 @@ from threading import Lock
 class FizzBuzz:
     def __init__(self, n: int):
         self.n = n
-        self.l1 = [Lock() for _ in range(3)]
-        self.l2 = [Lock() for _ in range(3)]
+        self.done = False
+        self.fizz_lock = Lock()
+        self.buzz_lock = Lock()
+        self.fizz_buzz_lock = Lock()
+        self.main = Lock()
 
-        # lock all the locks
-        for i in range(3):
-            self.l1[i].acquire()
-            self.l2[i].acquire()
+        self.fizz_lock.acquire()
+        self.buzz_lock.acquire()
+        self.fizz_buzz_lock.acquire()
 
     # printFizz() outputs "fizz"
     def fizz(self, printFizz: 'Callable[[], None]') -> None:
-        for val in range(1, self.n + 1):
-            if val % 3 == 0 and val % 5:
-                self.l1[0].acquire()
-                printFizz()
-                self.l2[0].release()
+        while True:
+            self.fizz_lock.acquire()
+            if self.done:
+                return
+            printFizz()
+            self.main.release()
 
     # printBuzz() outputs "buzz"
     def buzz(self, printBuzz: 'Callable[[], None]') -> None:
-        for val in range(1, self.n + 1):
-            if val % 5 == 0 and val % 3:
-                self.l1[1].acquire()
-                printBuzz()
-                self.l2[1].release()
+        while True:
+            self.buzz_lock.acquire()
+            if self.done:
+                return
+            printBuzz()
+            self.main.release()
 
     # printFizzBuzz() outputs "fizzbuzz"
     def fizzbuzz(self, printFizzBuzz: 'Callable[[], None]') -> None:
-        for val in range(1, self.n + 1):
-            if val % 3 == 0 and val % 5 == 0:
-                self.l1[2].acquire()
-                printFizzBuzz()
-                self.l2[2].release()
+        while True:
+            self.fizz_buzz_lock.acquire()
+            if self.done:
+                return
+            printFizzBuzz()
+            self.main.release()
 
     # printNumber(x) outputs "x", where x is an integer.
     def number(self, printNumber: 'Callable[[int], None]') -> None:
-        for val in range(1, self.n + 1):
-            if val % 3 and val % 5:
-                printNumber(val)
-            elif val % 3 == 0 and val % 5:
-                self.l1[0].release()
-                self.l2[0].acquire()
-            elif val % 5 == 0 and val % 3:
-                self.l1[1].release()
-                self.l2[1].acquire()
+        for i in range(1, self.n+1):
+            self.main.acquire()
+            if i % 3 == 0 and i % 5 == 0:
+                self.fizz_buzz_lock.release()
+            elif i % 3 == 0:
+                self.fizz_lock.release()
+            elif i % 5 == 0:
+                self.buzz_lock.release()
             else:
-                self.l1[2].release()
-                self.l2[2].acquire()
+                printNumber(i)
+                self.main.release()
+
+        self.main.acquire()
+        self.done = True
+        self.fizz_lock.release()
+        self.buzz_lock.release()
+        self.fizz_buzz_lock.release()
+        return

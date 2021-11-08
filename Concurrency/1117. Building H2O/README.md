@@ -25,6 +25,8 @@ Write synchronization code for oxygen and hydrogen molecules that enforces these
 
 **Constraints:**
 
-- Total length of input string will be 3*n*, where 1 ≤ _n_ ≤ 20.
-- Total number of `H` will be 2*n* in the input string.
-- Total number of `O` will be _n_ in the input string.
+- `3 * n == water.length`
+- `1 <= n <= 20`
+- `water[i]` is either `'H'` or `'O'`.
+- There will be exactly `2 * n` `'H'` in `water`.
+- There will be exactly `n` `'O'` in `water`.
