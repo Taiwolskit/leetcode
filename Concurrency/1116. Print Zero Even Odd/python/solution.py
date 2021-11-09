@@ -12,8 +12,7 @@ class ZeroEvenOdd:
         self.even_mutex.acquire()
         self.odd_mutex.acquire()
 
-        # printNumber(x) outputs "x", where x is an integer.
-
+    # printNumber(x) outputs "x", where x is an integer.
     def zero(self, printNumber: 'Callable[[int], None]') -> None:
         for i in range(self.n):
             self.zero_mutex.acquire()
