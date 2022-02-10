@@ -2,6 +2,12 @@
 
 Cracking the LeetCode with multiple programming language
 
+How I choose the solution ?
+
+1. Choose the best time complexity and space complexity solution from the official solution.
+2. If the best time complexity and space complexity solutions are different, choose the best solution from each one.
+3. If there are no official solutions, choose the best solution from submission by each language. These best solutions are not meant the best time complexity and space complexity. I will refer to the legibility of the solution, overly complex and tricky ones will not be selected.
+
 ## Algorithms
 
 | Number | Title                                                                                                                                                           | Difficulty | Solution           | Golang             | JavaScript         | Kotlin             | PHP                | Python             | Rust               | Swift              |
