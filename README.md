@@ -95,47 +95,45 @@ Cracking the LeetCode with multiple programming language
 
 ## Concurrency
 
-| Number | Title                                                                               | Difficulty | Solution | Python             |
-| ------ | ----------------------------------------------------------------------------------- | ---------- | -------- | ------------------ |
-| 1114   | [Print in Order](https://leetcode.com/problems/print-in-order/)                     | Easy       |          | :heavy_check_mark: |
-| 1115   | [Print FooBar Alternately](https://leetcode.com/problems/print-foobar-alternately/) | Medium     |          | :heavy_check_mark: |
-| 1116   | [Print Zero Even Odd](https://leetcode.com/problems/print-zero-even-odd/)           | Medium     |          | :heavy_check_mark: |
-| 1117   | [Building H2O](https://leetcode.com/problems/building-h2o/)                         | Medium     |          | :heavy_check_mark: |
-| 1195   | [Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded/)   | Medium     |          | :heavy_check_mark: |
-| 1226   | [The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers/)   | Medium     |          | :heavy_check_mark: |
+| Number | Title                                                                               | Difficulty | Solution           | Python             |
+| ------ | ----------------------------------------------------------------------------------- | ---------- | ------------------ | ------------------ |
+| 1114   | [Print in Order](https://leetcode.com/problems/print-in-order/)                     | Easy       | :heavy_check_mark: | :heavy_check_mark: |
+| 1115   | [Print FooBar Alternately](https://leetcode.com/problems/print-foobar-alternately/) | Medium     |                    | :heavy_check_mark: |
+| 1116   | [Print Zero Even Odd](https://leetcode.com/problems/print-zero-even-odd/)           | Medium     |                    | :heavy_check_mark: |
+| 1117   | [Building H2O](https://leetcode.com/problems/building-h2o/)                         | Medium     |                    | :heavy_check_mark: |
+| 1195   | [Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded/)   | Medium     |                    | :heavy_check_mark: |
+| 1226   | [The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers/)   | Medium     |                    | :heavy_check_mark: |
 
 ## Database
 
-| Number | Title                                                                                                                   | Difficulty | Solution | MySQL              |
-| ------ | ----------------------------------------------------------------------------------------------------------------------- | ---------- | -------- | ------------------ |
-| 175    | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)                                                 | Easy       |          | :heavy_check_mark: |
-| 176    | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)                                           | Easy       |          | :heavy_check_mark: |
-| 177    | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)                                                 | Medium     |          | :heavy_check_mark: |
-| 178    | [Rank Scores](https://leetcode.com/problems/rank-scores/)                                                               | Medium     |          | :heavy_check_mark: |
-| 180    | [Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/)                                               | Medium     |          | :heavy_check_mark: |
-| 181    | [Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/) | Easy       |          | :heavy_check_mark: |
-| 182    | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)                                                     | Easy       |          | :heavy_check_mark: |
-| 183    | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)                                   | Easy       |          | :heavy_check_mark: |
-| 184    | [Department Highest Salary](https://leetcode.com/problems/customers-who-never-order/)                                   | Medium     |          | :heavy_check_mark: |
-| 185    | [Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/)                           | Hard       |          | :heavy_check_mark: |
-| 196    | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)                                       | Easy       |          | :heavy_check_mark: |
-| 197    | [Rising Temperature](https://leetcode.com/problems/rising-temperature/)                                                 | Easy       |          | :heavy_check_mark: |
-| 262    | [Trips and Users](https://leetcode.com/problems/trips-and-users/)                                                       | Hard       |          | :heavy_check_mark: |
-| 262    | [Trips and Users](https://leetcode.com/problems/trips-and-users/)                                                       | Hard       |          | :heavy_check_mark: |
-| 595    | [Big Countries](https://leetcode.com/problems/big-countries/)                                                           | Easy       |          | :heavy_check_mark: |
-| 596    | [Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/)                             | Easy       |          | :heavy_check_mark: |
-| 601    | [Human Traffic of Stadium](https://leetcode.com/problems/human-traffic-of-stadium/)                                     | Hard       |          | :heavy_check_mark: |
-| 620    | [Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)                                                   | Easy       |          | :heavy_check_mark: |
-| 626    | [Exchange Seats](https://leetcode.com/problems/exchange-seats/)                                                         | Medium     |          | :heavy_check_mark: |
-| 626    | [Exchange Seats](https://leetcode.com/problems/exchange-seats/)                                                         | Medium     |          | :heavy_check_mark: |
-| 627    | [Swap Salary](https://leetcode.com/problems/swap-salary/)                                                               | Easy       |          | :heavy_check_mark: |
-| 1179   | [Reformat Department Table](https://leetcode.com/problems/reformat-department-table/)                                   | Easy       |          | :heavy_check_mark: |
+| Number | Title                                                                                                                   | Difficulty | Solution           | MySQL              |
+| ------ | ----------------------------------------------------------------------------------------------------------------------- | ---------- | ------------------ | ------------------ |
+| 175    | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)                                                 | Easy       | :heavy_check_mark: | :heavy_check_mark: |
+| 176    | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)                                           | Easy       | :heavy_check_mark: | :heavy_check_mark: |
+| 177    | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)                                                 | Medium     |                    | :heavy_check_mark: |
+| 178    | [Rank Scores](https://leetcode.com/problems/rank-scores/)                                                               | Medium     |                    | :heavy_check_mark: |
+| 180    | [Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/)                                               | Medium     | :heavy_check_mark: | :heavy_check_mark: |
+| 181    | [Employees Earning More Than Their Managers](https://leetcode.com/problems/employees-earning-more-than-their-managers/) | Easy       | :heavy_check_mark: | :heavy_check_mark: |
+| 182    | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)                                                     | Easy       | :heavy_check_mark: | :heavy_check_mark: |
+| 183    | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)                                   | Easy       | :heavy_check_mark: | :heavy_check_mark: |
+| 184    | [Department Highest Salary](https://leetcode.com/problems/customers-who-never-order/)                                   | Medium     | :heavy_check_mark: | :heavy_check_mark: |
+| 185    | [Department Top Three Salaries](https://leetcode.com/problems/department-top-three-salaries/)                           | Hard       | :heavy_check_mark: | :heavy_check_mark: |
+| 196    | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)                                       | Easy       | :heavy_check_mark: | :heavy_check_mark: |
+| 197    | [Rising Temperature](https://leetcode.com/problems/rising-temperature/)                                                 | Easy       | :heavy_check_mark: | :heavy_check_mark: |
+| 262    | [Trips and Users](https://leetcode.com/problems/trips-and-users/)                                                       | Hard       |                    | :heavy_check_mark: |
+| 595    | [Big Countries](https://leetcode.com/problems/big-countries/)                                                           | Easy       | :heavy_check_mark: | :heavy_check_mark: |
+| 596    | [Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/)                             | Easy       | :heavy_check_mark: | :heavy_check_mark: |
+| 601    | [Human Traffic of Stadium](https://leetcode.com/problems/human-traffic-of-stadium/)                                     | Hard       | :heavy_check_mark: | :heavy_check_mark: |
+| 620    | [Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)                                                   | Easy       | :heavy_check_mark: | :heavy_check_mark: |
+| 626    | [Exchange Seats](https://leetcode.com/problems/exchange-seats/)                                                         | Medium     | :heavy_check_mark: | :heavy_check_mark: |
+| 627    | [Swap Salary](https://leetcode.com/problems/swap-salary/)                                                               | Easy       | :heavy_check_mark: | :heavy_check_mark: |
+| 1179   | [Reformat Department Table](https://leetcode.com/problems/reformat-department-table/)                                   | Easy       |                    | :heavy_check_mark: |
 
 ## Shell
 
-| Number | Title                                                                       | Difficulty | Solution           | Bash               |
-| ------ | --------------------------------------------------------------------------- | ---------- | ------------------ | ------------------ |
-| 192    | [Word Frequency](https://leetcode.com/problems/word-frequency/submissions/) | Medium     |                    | :heavy_check_mark: |
-| 193    | [Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/)   | Easy       | :heavy_check_mark: | :heavy_check_mark: |
-| 194    | [Transpose File](https://leetcode.com/problems/transpose-file/)             | Medium     |                    | :heavy_check_mark: |
-| 195    | [Tenth Line](https://leetcode.com/problems/tenth-line/)                     | Easy       | :heavy_check_mark: | :heavy_check_mark: |
+| Number | Title                                                                       | Difficulty | Solution | Bash               |
+| ------ | --------------------------------------------------------------------------- | ---------- | -------- | ------------------ |
+| 192    | [Word Frequency](https://leetcode.com/problems/word-frequency/submissions/) | Medium     |          | :heavy_check_mark: |
+| 193    | [Valid Phone Numbers](https://leetcode.com/problems/valid-phone-numbers/)   | Easy       |          | :heavy_check_mark: |
+| 194    | [Transpose File](https://leetcode.com/problems/transpose-file/)             | Medium     |          | :heavy_check_mark: |
+| 195    | [Tenth Line](https://leetcode.com/problems/tenth-line/)                     | Easy       |          | :heavy_check_mark: |
