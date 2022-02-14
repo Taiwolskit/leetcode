@@ -1,9 +1,14 @@
 func subsets(nums []int) [][]int {
-	sol := [][]int{{}}
-	for _, num := range nums {
-		for _, cur := range sol {
-			sol = append(sol, append([]int{num}, cur...))
+	output := [][]int{}
+	var backtrack func(int, []int)
+
+	backtrack = func(first int, curr []int) {
+		output = append(output, append([]int{}, curr...))
+		for i := first; i < len(nums); i++ {
+			backtrack(i+1, append(curr, nums[i]))
 		}
 	}
-	return sol
+
+	backtrack(0, []int{})
+	return output
 }

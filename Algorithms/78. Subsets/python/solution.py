@@ -4,9 +4,7 @@ class Solution:
             output.append(curr[:])
 
             for i in range(first, len(nums)):
-                curr.append(nums[i])
-                backtrack(i+1, curr)
-                curr.pop()
+                backtrack(i+1, curr + [nums[i]])
 
         output = []
         backtrack()
