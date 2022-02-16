@@ -3,34 +3,26 @@
  * public class ListNode {
  *     public var val: Int
  *     public var next: ListNode?
- *     public init(_ val: Int) {
- *         self.val = val
- *         self.next = nil
- *     }
+ *     public init() { self.val = 0; self.next = nil; }
+ *     public init(_ val: Int) { self.val = val; self.next = nil; }
+ *     public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
  * }
  */
 class Solution {
-  func swapPairs(_ head: ListNode?) -> ListNode? {
-    var arr = [ListNode]()
-    var node = head
-    while node != nil {
-      arr.append(ListNode(node!.val))
-      node = node?.next
-    }
+    func swapPairs(_ head: ListNode?) -> ListNode? {
+        var (cur, next) = (head, head?.next)
+        var answer = next ?? cur
 
-    for i in stride(from: 0, to: arr.count - 1, by: 2) {
-      arr[i + 1].next = arr[i]
-      if i - 2 >= 0 {
-        arr[i - 2].next = arr[i + 1]
-      }
-    }
+        while cur != nil, next != nil {
+            var _cur = next?.next
+            var _next = _cur?.next
 
-    guard arr.count > 1 else {
-      return arr.count > 0 ? arr[0] : nil
+            next?.next = cur
+            cur?.next = _next ?? _cur
+
+            (cur, next) = (_cur, _next)
+        }
+
+        return answer
     }
-    if arr.count % 2 != 0 {
-      arr[arr.count - 3].next = arr[arr.count - 1]
-    }
-    return arr[1]
-  }
 }

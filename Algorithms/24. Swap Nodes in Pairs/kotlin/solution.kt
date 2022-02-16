@@ -9,11 +9,28 @@
  */
 class Solution {
     fun swapPairs(head: ListNode?): ListNode? {
-        if (head == null) return head
-        val next = head.next ?: return head
-        val tail = next.next
-        next.next = head
-        head.next = swapPairs(tail)
-        return next
+        if (head == null || head.next == null) {
+            return head
+        }
+
+        val dummy = ListNode(0)
+
+        var current: ListNode? = head
+        var prevNode: ListNode? = dummy
+
+        while (current != null && current?.next != null) {
+            val secondNext = current?.next?.next
+            val second = current?.next
+
+            prevNode?.next = second
+            second?.next = current
+            current?.next = secondNext
+
+            prevNode = prevNode?.next?.next
+            current = secondNext
+        }
+
+
+        return dummy.next
     }
 }
