@@ -4,48 +4,43 @@
  * @param {number} n
  * @return {number}
  */
-
-const initializeGraph = (n) => {
-    let G = [];
-    for (let i = 0; i < n; i++) {
-        G.push([]);
-    }
-    return G;
-};
-const addEdgeWithCostToG = (G, Edges) => {
-    for (const [u, v, cost] of Edges) {
-        G[u].push([v, cost]);
-        G[v].push([u, cost]);
-    }
-};
-
 var reachableNodes = function (edges, maxMoves, n) {
-    let g = initializeGraph(n);
-    addEdgeWithCostToG(g, edges);
-    return dijkstra(g, n, edges, maxMoves);
-};
+    const graph = {};
+    for (let [u, v, w] of edges) {
+        if (!(u in graph)) graph[u] = {};
+        if (!(v in graph)) graph[v] = {};
+        graph[u][v] = graph[v][u] = w;
+    }
 
-const MIN = Number.MIN_SAFE_INTEGER;
-const dijkstra = (g, n, edges, maxMoves) => {
-    let pq = new MaxPriorityQueue({ priority: (x) => x[0] });
-    let blood = Array(n).fill(MIN); // for each node, save maximum moves left to reach each node
-    pq.enqueue([maxMoves, 0]);
-    let res = 0;
+    const pq = new MinPriorityQueue({ priority: (x) => x[0] });
+    pq.enqueue([0, 0]);
+    const dist = { 0: 0 };
+    const used = {};
+    let ans = 0;
+
     while (pq.size()) {
-        let [hp, cur] = pq.dequeue().element;
-        if (blood[cur] != MIN) continue;
-        blood[cur] = hp;
-        res++;
-        for (const [next_node, cost] of g[cur]) {
-            let next_hp = hp - cost - 1; // cut the cost for move to adjacent child
-            if (next_hp < 0 || blood[next_node] != MIN) continue;
-            pq.enqueue([next_hp, next_node]);
+        const [d, node] = pq.dequeue().element;
+        if (d > dist[node]) continue;
+        ans += 1;
+
+        for (const nei in graph[node]) {
+            const weight = graph[node][nei];
+            const v = Math.min(weight, maxMoves - d);
+            used[`${node},${nei}`] = v;
+
+            const d2 = d + weight + 1;
+            if (d2 < (dist?.[nei] ?? maxMoves + 1)) {
+                pq.enqueue([d2, nei]);
+                dist[nei] = d2;
+            }
         }
     }
-    for (const [u, v, cost] of edges) {
-        let uv = blood[u] == MIN ? 0 : blood[u];
-        let vu = blood[v] == MIN ? 0 : blood[v];
-        res += Math.min(cost, uv + vu);
+
+    for (const [u, v, w] of edges) {
+        ans += Math.min(
+            w,
+            (used?.[`${u},${v}`] ?? 0) + (used?.[`${v},${u}`] ?? 0)
+        );
     }
-    return res;
+    return ans;
 };

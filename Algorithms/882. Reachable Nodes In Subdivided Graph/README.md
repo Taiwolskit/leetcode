@@ -32,10 +32,10 @@ Given the original graph and `maxMoves`, return _the number of nodes that are **
 
 **Constraints:**
 
--   `0 <= edges.length <= min(n * (n - 1) / 2, 104)`
--   `edges[i].length == 3`
--   `0 <= ui < vi < n`
--   There are **no multiple edges** in the graph.
--   `0 <= cnti <= 104`
--   `0 <= maxMoves <= 109`
--   `1 <= n <= 3000`
+- `0 <= edges.length <= min(n * (n - 1) / 2, 104)`
+- `edges[i].length == 3`
+- `0 <= ui < vi < n`
+- There are **no multiple edges** in the graph.
+- `0 <= cnti <= 104`
+- `0 <= maxMoves <= 109`
+- `1 <= n <= 3000`

@@ -15,9 +15,9 @@ Given an integer array `nums` and an integer `k`, return `true` if it is possibl
 
 **Constraints:**
 
--   `1 <= k <= nums.length <= 16`
--   `1 <= nums[i] <= 10^4`
--   The frequency of each element is in the range `[1, 4]`.
+- `1 <= k <= nums.length <= 16`
+- `1 <= nums[i] <= 10^4`
+- The frequency of each element is in the range `[1, 4]`.
 
 **Hint 1:**
 
