@@ -1,19 +1,60 @@
 # [177. Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)
 
-Write a SQL query to get the *n*th highest salary from the `Employee` table.
+SQL Schema >>
 
+    Create table If Not Exists Employee (Id int, Salary int)
+    Truncate table Employee
+    insert into Employee (id, salary) values ('1', '100')
+    insert into Employee (id, salary) values ('2', '200')
+    insert into Employee (id, salary) values ('3', '300')
+
+Table: `Employee`
+
+    +-------------+------+
+    | Column Name | Type |
+    +-------------+------+
+    | id          | int  |
+    | salary      | int  |
+    +-------------+------+
+    id is the primary key column for this table.
+    Each row of this table contains information about the salary of an employee.
+
+Write an SQL query to report the `nth` highest salary from the `Employee` table. If there is no `nth` highest salary, the query should report `null`.
+
+The query result format is in the following example.
+
+**Example 1:**
+
+    Input:
+    Employee table:
     +----+--------+
-    | Id | Salary |
+    | id | salary |
     +----+--------+
     | 1  | 100    |
     | 2  | 200    |
     | 3  | 300    |
     +----+--------+
-
-For example, given the above Employee table, the *n*th highest salary where _n_ = 2 is `200`. If there is no *n*th highest salary, then the query should return `null`.
-
+    n = 2
+    Output:
     +------------------------+
     | getNthHighestSalary(2) |
     +------------------------+
     | 200                    |
+    +------------------------+
+
+**Example 2:**
+
+    Input:
+    Employee table:
+    +----+--------+
+    | id | salary |
+    +----+--------+
+    | 1  | 100    |
+    +----+--------+
+    n = 2
+    Output:
+    +------------------------+
+    | getNthHighestSalary(2) |
+    +------------------------+
+    | null                   |
     +------------------------+
