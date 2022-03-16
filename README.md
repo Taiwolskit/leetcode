@@ -120,7 +120,7 @@ How I choose the solution ?
 | Number | Title                                                                                                                   | Difficulty | Solution           | MySQL              |
 | ------ | ----------------------------------------------------------------------------------------------------------------------- | ---------- | ------------------ | ------------------ |
 | 175    | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)                                                 | Easy       | :white_check_mark: | :white_check_mark: |
-| 176    | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)                                           | Easy       | :white_check_mark: | :white_check_mark: |
+| 176    | [Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)                                           | Medium     | :white_check_mark: | :white_check_mark: |
 | 177    | [Nth Highest Salary](https://leetcode.com/problems/nth-highest-salary/)                                                 | Medium     |                    | :white_check_mark: |
 | 178    | [Rank Scores](https://leetcode.com/problems/rank-scores/)                                                               | Medium     |                    | :white_check_mark: |
 | 180    | [Consecutive Numbers](https://leetcode.com/problems/consecutive-numbers/)                                               | Medium     | :white_check_mark: | :white_check_mark: |
