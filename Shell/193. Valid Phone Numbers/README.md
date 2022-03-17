@@ -6,7 +6,7 @@ You may assume that a valid phone number must appear in one of the following two
 
 You may also assume each line in the text file must not contain leading or trailing white spaces.
 
-Example:
+**Example:**
 
 Assume that `file.txt` has the following content:
 
