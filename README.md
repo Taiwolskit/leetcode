@@ -2,7 +2,7 @@
 
 Cracking the LeetCode with multiple programming language
 
-How I choose the solution ?
+How I choose the solution?
 
 1. Choose the best time complexity and space complexity solution from the official solution.
 2. If the best time complexity and space complexity solutions are different, choose the best solution from each one.
@@ -106,14 +106,17 @@ How I choose the solution ?
 
 ## Concurrency
 
-| Number | Title                                                                               | Difficulty | Solution           | Python             |
-| ------ | ----------------------------------------------------------------------------------- | ---------- | ------------------ | ------------------ |
-| 1114   | [Print in Order](https://leetcode.com/problems/print-in-order/)                     | Easy       | :white_check_mark: | :white_check_mark: |
-| 1115   | [Print FooBar Alternately](https://leetcode.com/problems/print-foobar-alternately/) | Medium     |                    | :white_check_mark: |
-| 1116   | [Print Zero Even Odd](https://leetcode.com/problems/print-zero-even-odd/)           | Medium     |                    | :white_check_mark: |
-| 1117   | [Building H2O](https://leetcode.com/problems/building-h2o/)                         | Medium     |                    | :white_check_mark: |
-| 1195   | [Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded/)   | Medium     |                    | :white_check_mark: |
-| 1226   | [The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers/)   | Medium     |                    | :white_check_mark: |
+| Number | Title                                                                                                         | Difficulty | Solution           | Python             |
+| ------ | ------------------------------------------------------------------------------------------------------------- | ---------- | ------------------ | ------------------ |
+| 1114   | [Print in Order](https://leetcode.com/problems/print-in-order/)                                               | Easy       | :white_check_mark: | :white_check_mark: |
+| 1115   | [Print FooBar Alternately](https://leetcode.com/problems/print-foobar-alternately/)                           | Medium     |                    | :white_check_mark: |
+| 1116   | [Print Zero Even Odd](https://leetcode.com/problems/print-zero-even-odd/)                                     | Medium     |                    | :white_check_mark: |
+| 1117   | [Building H2O](https://leetcode.com/problems/building-h2o/)                                                   | Medium     |                    | :white_check_mark: |
+| 1188   | [Design Bounded Blocking Queue](https://leetcode.com/problems/design-bounded-blocking-queue/)                 | Medium     |                    |                    |
+| 1195   | [Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded/)                             | Medium     |                    | :white_check_mark: |
+| 1226   | [The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers/)                             | Medium     |                    | :white_check_mark: |
+| 1242   | [Web Crawler Multithreaded](https://leetcode.com/problems/web-crawler-multithreaded/)                         | Medium     |                    |                    |
+| 1279   | [Traffic Light Controlled Intersection](https://leetcode.com/problems/traffic-light-controlled-intersection/) | Easy       |                    |                    |
 
 ## Database
 
