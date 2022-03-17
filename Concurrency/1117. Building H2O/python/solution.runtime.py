@@ -1,25 +1,26 @@
-from threading import Semaphore, Lock
+from threading import Barrier, Semaphore
 
 
 class H2O:
     def __init__(self):
-        self._lock_h = Semaphore(2)
-        self._lock_o = Semaphore(1)
-        self._lock_o.acquire()
-        self._lock_acquire_o = Lock()
+        # Barrier objects in python are used to wait for a fixed number of thread to complete execution before any particular thread can proceed forward with the execution of the program.
+        self.groups = Barrier(3)
+        # Semaphore can be used to limit the access to the shared resources with limited capacity.
+        self.h_cnt = Semaphore(2)
+        self.o_cnt = Semaphore(1)
 
     def hydrogen(self, releaseHydrogen: 'Callable[[], None]') -> None:
-        self._lock_h.acquire()
+        self.h_cnt.acquire()
+
+        self.groups.wait()
         # releaseHydrogen() outputs "H". Do not change or remove this line.
         releaseHydrogen()
-        self._lock_o.release()
+        self.h_cnt.release()
 
     def oxygen(self, releaseOxygen: 'Callable[[], None]') -> None:
-        self._lock_acquire_o.acquire()
-        self._lock_o.acquire()
-        self._lock_o.acquire()
-        self._lock_acquire_o.release()
+
+        self.o_cnt.acquire()
+        self.groups.wait()
         # releaseOxygen() outputs "O". Do not change or remove this line.
         releaseOxygen()
-        self._lock_h.release()
-        self._lock_h.release()
+        self.o_cnt.release()

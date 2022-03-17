@@ -1,5 +1,6 @@
 from threading import Lock
 
+
 class Foo:
     def __init__(self):
         self.firstJobDone = Lock()

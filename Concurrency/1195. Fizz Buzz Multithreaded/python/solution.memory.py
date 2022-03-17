@@ -60,4 +60,3 @@ class FizzBuzz:
         self.fizz_lock.release()
         self.buzz_lock.release()
         self.fizz_buzz_lock.release()
-        return

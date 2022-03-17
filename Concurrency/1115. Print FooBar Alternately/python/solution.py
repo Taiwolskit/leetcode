@@ -9,7 +9,7 @@ class FooBar:
 
     def foo(self, printFoo: 'Callable[[], None]') -> None:
         self.barlock.acquire()
-        for i in range(self.n):
+        for _ in range(self.n):
             self.foolock.acquire()
             # printFoo() outputs "foo". Do not change or remove this line.
             printFoo()
@@ -17,7 +17,7 @@ class FooBar:
 
     def bar(self, printBar: 'Callable[[], None]') -> None:
 
-        for i in range(self.n):
+        for _ in range(self.n):
             self.barlock.acquire()
             # printBar() outputs "bar". Do not change or remove this line.
             printBar()
