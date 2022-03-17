@@ -3,11 +3,11 @@ SELECT
     IFNULL(
         (
             SELECT
-                DISTINCT Salary
+                DISTINCT salary
             FROM
                 Employee
             ORDER BY
-                Salary DESC
+                salary DESC
             LIMIT
                 1 OFFSET 1
         ),

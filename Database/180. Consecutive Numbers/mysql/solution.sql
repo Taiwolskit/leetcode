@@ -1,11 +1,12 @@
 # Write your MySQL query statement below
-SELECT DISTINCT Num AS ConsecutiveNums
-FROM (
-    SELECT Num, CASE
-        WHEN @record = Num THEN @num := @num + 1
-        WHEN @record:= Num THEN @num:=1 END AS n
-    FROM Logs, (
-        SELECT @num:=0, @record:=NULL
-    ) r
-) a
-WHERE a.n >= 3;
+SELECT
+    DISTINCT l1.num AS ConsecutiveNums
+FROM
+    Logs l1,
+    Logs l2,
+    Logs l3
+WHERE
+    l1.id = l2.id - 1
+    AND l2.id = l3.id - 1
+    AND l1.num = l2.num
+    AND l2.num = l3.num;

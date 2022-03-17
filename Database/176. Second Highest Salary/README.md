@@ -1,6 +1,6 @@
 # [176. Second Highest Salary](https://leetcode.com/problems/second-highest-salary/)
 
-SQL Schema >>
+SQL Schema >
 
     Create table If Not Exists Employee (id int, salary int)
     Truncate table Employee
