@@ -4,4 +4,4 @@ class Solution:
             diff = target - nums[i]
 
             if diff in nums and i is not nums.index(diff):
-                return [i, nums.index(diff)]
+                return [nums.index(diff), i]

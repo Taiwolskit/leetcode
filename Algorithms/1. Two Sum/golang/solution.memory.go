@@ -1,17 +1,11 @@
 func twoSum(nums []int, target int) []int {
-	var result []int
-	if len(nums) < 1 {
-		return nums
-	}
-
-	for i := 0; i < len(nums)-1; i++ {
-		for j := i + 1; j < len(nums); j++ {
-			if target == nums[i]+nums[j] {
-				result = append(result, i, j)
-				return result
+	n := len(nums)
+	for i := 0; i < n-1; i++ {
+		for j := i + 1; j < n; j++ {
+			if nums[i]+nums[j] == target {
+				return []int{i, j}
 			}
 		}
 	}
-
-	return result
+	return []int{}
 }

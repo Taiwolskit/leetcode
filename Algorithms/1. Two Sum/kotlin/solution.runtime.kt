@@ -3,11 +3,12 @@ class Solution {
         val hash = mutableMapOf<Int, Int>()
 
         for ((index, num) in nums.withIndex()) {
-            if (hash.containsKey(num)) {
-                return intArrayOf(hash.getValue(num), index)
+            var diff = target - num
+            if (hash.containsKey(diff)) {
+                return intArrayOf(hash.getValue(diff), index)
             }
 
-            hash[target - num] = index
+            hash[num] = index
         }
 
         return intArrayOf()

@@ -1,16 +1,14 @@
 class Solution {
     fun twoSum(nums: IntArray, target: Int): IntArray {
-        var result = intArrayOf()
+        for ((index, num) in nums.withIndex()) {
+            var diff = target - num
 
-        for (i in 0 until nums.size - 1) {
-            for (j in (i + 1) until nums.size) {
-                if (nums[i] + nums[j] == target) {
-                    result = intArrayOf(i, j)
-                    break
-                }
+            if (nums.contains(diff) && nums.indexOf(diff) != index) {
+                return intArrayOf(nums.indexOf(diff), index)
             }
         }
 
-        return result
+        return intArrayOf()
+
     }
 }

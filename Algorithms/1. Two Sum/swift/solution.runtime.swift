@@ -2,14 +2,14 @@ class Solution {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
         var hash: [Int : Int] = [:]
 
-        for (i, j) in nums.enumerated() {
-            if let index = hash[target - j] {
+        for (i, num) in nums.enumerated() {
+            if let index = hash[target - num] {
                 return [index, i]
             }
 
-            hash[j] = i
+            hash[num] = i
         }
 
-        return [];
+        return []
     }
 }

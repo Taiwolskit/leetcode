@@ -3,17 +3,12 @@
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function(nums, target) {
-  let result;
+var twoSum = function (nums, target) {
+    for (let i = 0; i < nums.length; i++) {
+        const diff = target - nums[i];
 
-  for (let i = 0; i < nums.length; i++) {
-    const diff = nums.indexOf(target - nums[i]);
-
-    if (diff > -1 && diff !== i) {
-      result = [i, diff];
-      break;
+        if (nums.includes(diff) && i !== nums.indexOf(diff)) {
+            return [nums.indexOf(diff), i];
+        }
     }
-  }
-
-  return result;
 };
