@@ -105,6 +105,7 @@ How I choose the solution?
 | 1293   | [Shortest Path in a Grid with Obstacles Elimination](https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/)                         | Hard       |                    | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    | :white_check_mark: |                    | :white_check_mark: |
 | 1328   | [Break a Palindrome](https://leetcode.com/problems/break-a-palindrome/)                                                                                         | Medium     |                    | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    | :white_check_mark: |                    | :white_check_mark: |
 | 1629   | [Slowest Key](https://leetcode.com/problems/slowest-key/)                                                                                                       | Easy       |                    | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    | :white_check_mark: |                    | :white_check_mark: |
+| 1663   | [Smallest String With A Given Numeric Value](https://leetcode.com/problems/smallest-string-with-a-given-numeric-value)                                          | Medium     |                    | :white_check_mark: | :white_check_mark: | :white_check_mark: |                    | :white_check_mark: |                    | :white_check_mark: |
 
 ## Concurrency
 
