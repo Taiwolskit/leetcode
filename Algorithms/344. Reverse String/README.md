@@ -2,6 +2,8 @@
 
 Write a function that reverses a string. The input string is given as an array of characters `s`.
 
+You must do this by modifying the input array [in-place](https://en.wikipedia.org/wiki/In-place_algorithm) with `O(1)` extra memory.
+
 **Example 1:**
 
     Input: s = ["h","e","l","l","o"]
@@ -14,10 +16,8 @@ Write a function that reverses a string. The input string is given as an array o
 
 **Constraints:**
 
--   `1 <= s.length <= 105`
--   `s[i]` is a [printable ascii character](https://en.wikipedia.org/wiki/ASCII#Printable_characters).
-
-**Follow up:** Do not allocate extra space for another array. You must do this by modifying the input array [in-place](https://en.wikipedia.org/wiki/In-place_algorithm) with `O(1)` extra memory.
+- `1 <= s.length <= 10**5`
+- `s[i]` is a [printable ascii character](https://en.wikipedia.org/wiki/ASCII#Printable_characters).
 
 **Hint 1:**
 
