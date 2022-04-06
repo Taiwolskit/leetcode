@@ -1,18 +1,17 @@
 func maxArea(height []int) int {
-	mx := 0
-	i, j := 0, len(height)-1
+	left, right, area := 0, len(height)-1, 0
 	var vol int
-	for i < j {
-		if height[i] > height[j] {
-			vol = (j - i) * height[j]
-			j--
+	for left < right {
+		if height[right] > height[left] {
+			vol = (right - left) * height[left]
+			left++
 		} else {
-			vol = (j - i) * height[i]
-			i++
+			vol = (right - left) * height[right]
+			right--
 		}
-		if mx < vol {
-			mx = vol
+		if vol > area {
+			area = vol
 		}
 	}
-	return mx
+	return area
 }
