@@ -3,7 +3,7 @@ class Solution {
         var i = nums.size - 2
 
         while (i >= 0 && nums[i + 1] <= nums[i]) {
-             i--
+            i--
         }
 
         if (i >= 0) {

@@ -4,27 +4,17 @@ class Solution:
         Do not return anything, modify nums in-place instead.
         """
         i = len(nums) - 2
-        while i >= 0 and nums[i+1] <= nums[i]:
-            i = i - 1
-
+        while i >= 0 and nums[i] >= nums[i + 1]:
+            i -= 1
         if i >= 0:
             j = len(nums) - 1
-            while j >= 0 and nums[j] <= nums[i]:
-                j = j - 1
+            while nums[i] >= nums[j]:
+                j -= 1
+            nums[i], nums[j] = nums[j], nums[i]
 
-            self.swap(nums, i, j)
-
-        self.reverse(nums, i + 1)
-
-    def reverse(self, nums: List[int], start: int) -> None:
-        i = start
-        j = len(nums) - 1
-        while i < j:
-            self.swap(nums, i, j)
-            i = i + 1
-            j = j - 1
-
-    def swap(self, nums: List[int], i: int, j: int) -> None:
-        temp = nums[i]
-        nums[i] = nums[j]
-        nums[j] = temp
+        rev_start = i + 1
+        rev_end = len(nums) - 1
+        while rev_start < rev_end:
+            nums[rev_start], nums[rev_end] = nums[rev_end], nums[rev_start]
+            rev_start += 1
+            rev_end -= 1

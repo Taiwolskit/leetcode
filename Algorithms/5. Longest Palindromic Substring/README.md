@@ -1,17 +1,22 @@
 # [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 
-Given a string **s**, find the longest palindromic substring in **s**. You may assume that the maximum length of **s** is 1000.
+Given a string `s`, return _the longest palindromic substring_ in `s`.
 
 **Example 1:**
 
-    Input: "babad"
+    Input: s = "babad"
     Output: "bab"
-    Note: "aba" is also a valid answer.
+    Explanation: "aba" is also a valid answer.
 
 **Example 2:**
 
-    Input: "cbbd"
+    Input: s = "cbbd"
     Output: "bb"
+
+**Constraints:**
+
+- `1 <= s.length <= 1000`
+- `s` consist of only digits and English letters.
 
 **Hint 1:**
 
@@ -19,7 +24,7 @@ How can we reuse a previously computed palindrome to compute a larger palindrome
 
 **Hint 2:**
 
-If “aba” is a palindrome, is “xabax” and palindrome? Similarly is “xabay” a palindrome?
+If “aba” is a palindrome, is “xabax” a palindrome? Similarly is “xabay” a palindrome?
 
 **Hint 3:**
 

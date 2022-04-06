@@ -3,32 +3,32 @@
  * @return {void} Do not return anything, modify nums in-place instead.
  */
 var nextPermutation = function (nums) {
-  function swap(i, j) {
-    let temp = nums[i];
-    nums[i] = nums[j];
-    nums[j] = temp;
-  }
-
-  function reverse(start) {
-    let end = nums.length - 1;
-    while (start < end) {
-      swap(start, end);
-      start++;
-      end--;
+    function swap(i, j) {
+        const temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
     }
-  }
 
-  let i = nums.length - 2;
-  while (i >= 0 && nums[i + 1] <= nums[i]) {
-    i--;
-  }
-
-  if (i >= 0) {
-    let j = nums.length - 1;
-    while (j >= 0 && nums[j] <= nums[i]) {
-      j--;
+    function reverse(start) {
+        let end = nums.length - 1;
+        while (start < end) {
+            swap(start, end);
+            start++;
+            end--;
+        }
     }
-    swap(i, j);
-  }
-  reverse(i + 1);
+
+    let i = nums.length - 2;
+    while (i >= 0 && nums[i + 1] <= nums[i]) {
+        i--;
+    }
+
+    if (i >= 0) {
+        let j = nums.length - 1;
+        while (j >= 0 && nums[j] <= nums[i]) {
+            j--;
+        }
+        swap(i, j);
+    }
+    reverse(i + 1);
 };
