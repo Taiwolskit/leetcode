@@ -5,25 +5,20 @@
  */
 var threeSumMulti = function (arr, target) {
     const MOD = 1e9 + 7;
+    const keys = [...new Set(arr)].sort();
     const count = new Map();
-    const keys = [];
-    let ans = 0;
-    for (let a of arr) {
-        if (count.has(a)) {
-            count.set(a, count.get(a) + 1);
-        } else {
-            count.set(a, 1);
-            keys.push(a);
-        }
+    for (const el of arr) {
+        count.set(el, (count.get(el) || 0) + 1);
     }
-    keys.sort((a, b) => a - b);
+    let ans = 0;
+
     for (let i = 0; i < keys.length; i++) {
-        const x = keys[i];
-        const T = target - x;
+        const x = keys[i],
+            T = target - x;
         let j = i,
             k = keys.length - 1;
         while (j <= k) {
-            let y = keys[j],
+            const y = keys[j],
                 z = keys[k];
             if (y + z < T) {
                 j++;
@@ -32,7 +27,7 @@ var threeSumMulti = function (arr, target) {
             } else {
                 if (i < j && j < k) {
                     ans += count.get(x) * count.get(y) * count.get(z);
-                } else if (j === j && j < k) {
+                } else if (i === j && j < k) {
                     ans +=
                         count.get(x) *
                         Math.floor((count.get(x) - 1) / 2) *
@@ -48,12 +43,10 @@ var threeSumMulti = function (arr, target) {
                         (count.get(x) - 1) *
                         Math.floor((count.get(x) - 2) / 6);
                 }
-
                 j++;
                 k--;
             }
         }
     }
-
     return ans % MOD;
 };
