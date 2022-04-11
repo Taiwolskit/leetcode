@@ -24,7 +24,7 @@ How can we reuse a previously computed palindrome to compute a larger palindrome
 
 **Hint 2:**
 
-If “aba” is a palindrome, is “xabax” a palindrome? Similarly is “xabay” a palindrome?
+If "aba" is a palindrome, is "xabax" a palindrome? Similarly is "xabay" a palindrome?
 
 **Hint 3:**
 
