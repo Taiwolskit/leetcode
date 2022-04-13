@@ -3,13 +3,13 @@ class Solution:
         if numRows == 1:
             return s
 
-        rows = [""]*numRows
+        rows = [""] * numRows
         cur_row = 0
         going_down = -1
 
         for c in s:
             rows[cur_row] += c
-            if cur_row == 0 or cur_row == numRows-1:
+            if cur_row == 0 or cur_row == numRows - 1:
                 going_down *= -1
             cur_row += going_down
 
