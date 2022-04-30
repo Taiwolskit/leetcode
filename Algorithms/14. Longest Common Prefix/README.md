@@ -15,6 +15,8 @@ If there is no common prefix, return an empty string `""`.
     Output: ""
     Explanation: There is no common prefix among the input strings.
 
-**Note:**
+**Constraints:**
 
-All given inputs are in lowercase letters `a-z`.
+- `1 <= strs.length <= 200`
+- `0 <= strs[i].length <= 200`
+- `strs[i]` consists of only lower-case English letters.
