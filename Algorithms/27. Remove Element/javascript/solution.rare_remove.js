@@ -4,12 +4,15 @@
  * @return {number}
  */
 var removeElement = function (nums, val) {
+    let n = nums.length;
     let i = 0;
-    for (const j of nums) {
-        if (j !== val) {
-            nums[i] = j;
+    while (i < n) {
+        if (nums[i] === val) {
+            nums[i] = nums[n - 1];
+            n--;
+        } else {
             i++;
         }
     }
-    return i;
+    return n;
 };

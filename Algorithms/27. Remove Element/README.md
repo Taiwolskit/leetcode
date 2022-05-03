@@ -1,42 +1,61 @@
-# [27. Remove Element](https://leetcode.com/problems/remove-element/)
+Given an integer array `nums` and an integer `val`, remove all occurrences of `val` in `nums` [in-place](https://en.wikipedia.org/wiki/In-place_algorithm). The relative order of the elements may be changed.
 
-Given an array _nums_ and a value _val_, remove all instances of that value [in-place](https://en.wikipedia.org/wiki/In-place_algorithm) and return the new length.
+Since it is impossible to change the length of the array in some languages, you must instead have the result be placed in the **first part** of the array `nums`. More formally, if there are `k` elements after removing the duplicates, then the first `k` elements of `nums` should hold the final result. It does not matter what you leave beyond the first `k` elements.
 
-Do not allocate extra space for another array, you must do this by **modifying the input array [in-place](https://en.wikipedia.org/wiki/In-place_algorithm)** with O(1) extra memory.
+Return _`k` after placing the final result in the first `k` slots of `nums`_.
 
-The order of elements can be changed. It doesn't matter what you leave beyond the new length.
+Do **not** allocate extra space for another array. You must do this by **modifying the input array** [in-place](https://en.wikipedia.org/wiki/In-place_algorithm) with O(1) extra memory.
+
+**Custom Judge:**
+
+The judge will test your solution with the following code:
+
+    int[] nums = [...]; // Input array
+    int val = ...; // Value to remove
+    int[] expectedNums = [...]; // The expected answer with correct length.
+                                // It is sorted with no values equaling val.
+
+    int k = removeElement(nums, val); // Calls your implementation
+
+    assert k == expectedNums.length;
+    sort(nums, 0, k); // Sort the first k elements of nums
+    for (int i = 0; i < actualLength; i++) {
+        assert nums[i] == expectedNums[i];
+    }
+
+If all assertions pass, then your solution will be **accepted**.
 
 **Example 1:**
 
-    Given nums = [3,2,2,3], val = 3,
-
-    Your function should return length = 2, with the first two elements of nums being 2.
-
-    It doesn't matter what you leave beyond the returned length.
+    Input: nums = [3,2,2,3], val = 3
+    Output: 2, nums = [2,2,_,_]
+    Explanation: Your function should return k = 2, with the first two elements of nums being 2.
+    It does not matter what you leave beyond the returned k (hence they are underscores).
 
 **Example 2:**
 
-    Given nums = [0,1,2,2,3,0,4,2], val = 2,
+    Input: nums = [0,1,2,2,3,0,4,2], val = 2
+    Output: 5, nums = [0,1,4,0,3,_,_,_]
+    Explanation: Your function should return k = 5, with the first five elements of nums containing 0, 0, 1, 3, and 4.
+    Note that the five elements can be returned in any order.
+    It does not matter what you leave beyond the returned k (hence they are underscores).
 
-    Your function should return length = 5, with the first five elements of nums containing 0, 1, 3, 0, and 4.
+**Constraints:**
 
-    Note that the order of those five elements can be arbitrary.
+- `0 <= nums.length <= 100`
+- `0 <= nums[i] <= 50`
+- `0 <= val <= 100`
 
-    It doesn't matter what values are set beyond the returned length.
+**Hint 1:**
 
-**Clarification:**
+The problem statement clearly asks us to modify the array in-place and it also says that the element beyond the new length of the array can be anything. Given an element, we need to remove all the occurrences of it from the array. We don't technically need to **remove** that element per-say, right?
 
-Confused why the returned value is an integer but your answer is an array?
+**Hint 2:**
 
-Note that the input array is passed in by **reference**, which means modification to the input array will be known to the caller as well.
+![hint_remove_element.png](hint_remove_element.png)
 
-Internally you can think of this:
+We can move all the occurrences of this element to the end of the array. Use two pointers!
 
-    // nums is passed in by reference. (i.e., without making a copy)
-    int len = removeElement(nums, val);
+**Hint 3:**
 
-    // any modification to nums in your function would be known by the caller.
-    // using the length returned by your function, it prints the first len elements.
-    for (int i = 0; i < len; i++) {
-        print(nums[i]);
-    }
+Yet another direction of thought is to consider the elements to be removed as non-existent. In a single pass, if we keep copying the visible elements in-place, that should also solve this problem for us.
