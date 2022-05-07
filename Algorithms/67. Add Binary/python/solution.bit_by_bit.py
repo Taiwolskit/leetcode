@@ -11,15 +11,10 @@ class Solution:
             if b[i] == '1':
                 carry += 1
 
-            if carry % 2 == 1:
-                answer.append('1')
-            else:
-                answer.append('0')
-
+            answer.append(str(carry % 2))
             carry //= 2
 
         if carry == 1:
             answer.append('1')
         answer.reverse()
-
         return ''.join(answer)
