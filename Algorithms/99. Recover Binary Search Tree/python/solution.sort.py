@@ -15,7 +15,9 @@ class Solution:
 
         def find_two_swapped(nums: List[int]) -> (int, int):
             n = len(nums)
-            x = y = None # Initialize x and y as a value that cannot be the value of a node.
+            x = (
+                y
+            ) = None  # Initialize x and y as a value that cannot be the value of a node.
             for i in range(n - 1):
                 if nums[i + 1] < nums[i]:
                     y = nums[i + 1]

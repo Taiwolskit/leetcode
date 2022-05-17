@@ -7,8 +7,9 @@
 class Solution:
     def recoverTree(self, root: Optional[TreeNode]) -> None:
         """
-        :rtype: void Do not return anything, modify root in-place instead.
+        Do not return anything, modify root in-place instead.
         """
+
         stack = []
         x = y = pred = None
 

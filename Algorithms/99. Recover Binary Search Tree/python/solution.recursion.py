@@ -7,9 +7,11 @@
 class Solution:
     def recoverTree(self, root: Optional[TreeNode]) -> None:
         """
-        :type root: TreeNode
-        :rtype: void Do not return anything, modify root in-place instead.
+        Do not return anything, modify root in-place instead.
         """
+
+        x = y = pred = None
+
         def find_two_swapped(root: TreeNode) -> None:
             nonlocal x, y, pred
             if root is None:
@@ -27,6 +29,5 @@ class Solution:
             pred = root
             find_two_swapped(root.right)
 
-        x = y = pred = None
         find_two_swapped(root)
         x.val, y.val = y.val, x.val

@@ -7,9 +7,9 @@
 class Solution:
     def recoverTree(self, root: Optional[TreeNode]) -> None:
         """
-        :type root: TreeNode
-        :rtype: void Do not return anything, modify root in-place instead.
+        Do not return anything, modify root in-place instead.
         """
+
         # predecessor is a Morris predecessor.
         # In the 'loop' cases it could be equal to the node itself predecessor == root.
         # pred is a 'true' predecessor,
