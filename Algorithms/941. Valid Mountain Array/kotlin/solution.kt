@@ -1,6 +1,6 @@
 class Solution {
     fun validMountainArray(arr: IntArray): Boolean {
-        var N = arr.size
+        val N = arr.size
         if (N < 3) return false
         var i = 0
         while (i < N - 1 && arr[i] < arr[i + 1]) {
