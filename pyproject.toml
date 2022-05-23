@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "leetcode"
+version = "0.1.0"
+description = ""
+authors = ["Edwin Jarvis <edwin.jarvis@taiwolskit.com>"]
+
+[tool.poetry.dependencies]
+python = "3.10.4"
+
+[tool.poetry.dev-dependencies]
+bandit = "^1.7.4"
+mypy = "^0.950"
+prospector = "^1.7.7"
+pylama = "^8.3.8"
+pylint = "^2.13.9"
