@@ -28,7 +28,7 @@ class MyLinkedList:
                 curr = curr.next
         else:
             curr = self.tail
-            for _ in range(self.size - index):
+            for _ in range(index, self.size):
                 curr = curr.prev
 
         return curr.val
@@ -80,7 +80,7 @@ class MyLinkedList:
             succ = pred.next
         else:
             succ = self.tail
-            for _ in range(self.size - index):
+            for _ in range(index, self.size):
                 succ = succ.prev
             pred = succ.prev
 
@@ -108,7 +108,7 @@ class MyLinkedList:
             succ = pred.next.next
         else:
             succ = self.tail
-            for _ in range(self.size - index - 1):
+            for _ in range(index + 1, self.size):
                 succ = succ.prev
             pred = succ.prev.prev
 
