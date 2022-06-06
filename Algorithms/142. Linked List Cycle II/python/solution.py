@@ -4,8 +4,9 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
-    def getIntersect(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def getIntersect(self, head: ListNode | None) -> ListNode | None:
         tortoise = head
         hare = head
 
@@ -19,7 +20,7 @@ class Solution:
 
         return None
 
-    def detectCycle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def detectCycle(self, head: ListNode | None) -> ListNode | None:
         if head is None:
             return None
 
