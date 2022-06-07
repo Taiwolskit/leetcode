@@ -12,7 +12,7 @@
  */
 var detectCycle = function (head) {
     if (head === null) return null;
-    let intersection = getIntersection(head);
+    const intersection = getIntersection(head);
     if (intersection === null) return null;
     let ptr1 = head,
         ptr2 = intersection;

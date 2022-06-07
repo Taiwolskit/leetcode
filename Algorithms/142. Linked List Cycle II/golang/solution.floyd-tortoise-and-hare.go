@@ -6,7 +6,7 @@
  * }
  */
 func detectCycle(head *ListNode) *ListNode {
-	if head == nil || head.Next == nil {
+	if head == nil {
 		return nil
 	}
 	intersect := getIntersect(head)
