@@ -10,7 +10,7 @@
 class Solution {
     fun reverseList(head: ListNode?): ListNode? {
         var prev: ListNode? = null
-        var current = head
+        var current: ListNode? = head
 
         while (current != null) {
             val next = current.next
