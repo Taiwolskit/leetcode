@@ -5,7 +5,7 @@ description = ""
 authors = ["Edwin Jarvis <edwin.jarvis@taiwolskit.com>"]
 
 [tool.poetry.dependencies]
-python = "3.10.4"
+python = "^3.10"
 
 [tool.poetry.dev-dependencies]
 autopep8 = "^1.6.0"
