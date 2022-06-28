@@ -1,5 +1,5 @@
 class Solution:
-    def maxTurbulenceSize(self, arr: List[int]) -> int:
+    def maxTurbulenceSize(self, arr: list[int]) -> int:
         N = len(arr)
         ans = 1
         anchor = 0
@@ -24,7 +24,7 @@ class Solution:
 
 
 # class Solution:
-#     def maxTurbulenceSize(self, arr: List[int]) -> int:
+#     def maxTurbulenceSize(self, arr: list[int]) -> int:
 #         m = len(arr)
 #         inc = [1] * m
 #         dec = [1] * m

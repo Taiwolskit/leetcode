@@ -3,7 +3,7 @@ from bisect import bisect_left
 
 
 class Solution:
-    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+    def minSubArrayLen(self, target: int, nums: list[int]) -> int:
         n = len(nums)
         if n == 0:
             return 0

@@ -3,7 +3,7 @@ from collections import Counter
 
 
 class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+    def topKFrequent(self, nums: list[int], k: int) -> list[int]:
         # O(1) time
         if k == len(nums):
             return nums

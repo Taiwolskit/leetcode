@@ -1,5 +1,5 @@
 class Solution:
-    def uniquePathsIII(self, grid: List[List[int]]) -> int:
+    def uniquePathsIII(self, grid: list[list[int]]) -> int:
         """
         To find the unique path in 4 directional walks
         """

@@ -4,7 +4,7 @@ class Solution:
             nums[start], nums[end] = nums[end], nums[start]
             start, end = start + 1, end - 1
 
-    def rotate(self, nums: List[int], k: int) -> None:
+    def rotate(self, nums: list[int], k: int) -> None:
         """
         Do not return anything, modify nums in-place instead.
         """

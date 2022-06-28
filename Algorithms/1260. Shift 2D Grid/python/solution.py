@@ -1,5 +1,5 @@
 class Solution:
-    def shiftGrid(self, grid: List[List[int]], k: int) -> List[List[int]]:
+    def shiftGrid(self, grid: list[list[int]], k: int) -> list[list[int]]:
         num_rows, num_cols = len(grid), len(grid[0])
         new_grid = [[0] * num_cols for _ in range(num_rows)]
         for row in range(num_rows):

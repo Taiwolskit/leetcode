@@ -1,5 +1,5 @@
 class Solution:
-    def sortArrayByParityII(self, nums: List[int]) -> List[int]:
+    def sortArrayByParityII(self, nums: list[int]) -> list[int]:
         even_idx = 0
         odd_idx = 1
         sz = len(nums)

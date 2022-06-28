@@ -13,7 +13,7 @@ var findMedianSortedArrays = function (nums1, nums2) {
         const shortMidIdx = Math.floor((shortStartIdx + shortEndIdx) / 2);
         const longMidIdx = Math.floor(totalLength / 2) - shortMidIdx  - 2;
 
-        const shortLeft = shortMidIdx === 0 ? Number.NEGATIVE_INFINITY : shortList[shortMidIdx - 1];
+        const shortLeft = shortMidIdx === 0 ? Number.NEGATIVE_INFINITY : shortlist[shortMidIdx - 1];
 
         if (shortMid < longMid) {
             shortStartIdx = shortMidIdx + 1;

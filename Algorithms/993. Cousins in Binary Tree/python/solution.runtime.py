@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def isCousins(self, root: Optional[TreeNode], x: int, y: int) -> bool:
+    def isCousins(self, root: TreeNode | None, x: int, y: int) -> bool:
         depth = 0
         curr = [(root, None)]
         dp = {}

@@ -1,5 +1,5 @@
 class Solution:
-    def findMinArrowShots(self, points: List[List[int]]) -> int:
+    def findMinArrowShots(self, points: list[list[int]]) -> int:
         if not points:
             return 0
 

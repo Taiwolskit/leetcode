@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def sumRootToLeaf(self, root: Optional[TreeNode]) -> int:
+    def sumRootToLeaf(self, root: TreeNode | None) -> int:
         root_to_leaf = curr_number = 0
 
         while root:

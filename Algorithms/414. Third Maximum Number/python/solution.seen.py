@@ -1,5 +1,5 @@
 class Solution:
-    def thirdMax(self, nums: List[int]) -> int:
+    def thirdMax(self, nums: list[int]) -> int:
         def maximum_ignoring_seen_maximums(nums, seen_maximums):
             maximum = None
             for num in nums:

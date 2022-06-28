@@ -1,5 +1,5 @@
 class Solution:
-    def numUniqueEmails(self, emails: List[str]) -> int:
+    def numUniqueEmails(self, emails: list[str]) -> int:
         seen = set()
         for email in emails:
             name, domain = email.split('@')

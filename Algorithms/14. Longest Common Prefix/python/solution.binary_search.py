@@ -1,5 +1,5 @@
 class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -> str:
+    def longestCommonPrefix(self, strs: list[str]) -> str:
         if strs is None or len(strs) == 0:
             return ''
         low = 1
@@ -12,7 +12,7 @@ class Solution:
                 hight = middle - 1
         return strs[0][:(low + hight) // 2]
 
-    def isCommonPrefix(self, strs: List[str], length: int) -> bool:
+    def isCommonPrefix(self, strs: list[str], length: int) -> bool:
         str1 = strs[0][:length]
         for string in strs[1:]:
             if not string.startswith(str1):

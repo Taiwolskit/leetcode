@@ -1,5 +1,5 @@
 class Solution:
-    def findMiddleIndex(self, nums: List[int]) -> int:
+    def findMiddleIndex(self, nums: list[int]) -> int:
         left = 0
         right = sum(nums)
 

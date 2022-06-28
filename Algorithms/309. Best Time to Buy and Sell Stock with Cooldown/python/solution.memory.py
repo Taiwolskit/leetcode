@@ -1,5 +1,5 @@
 class Solution:
-    def maxProfit(self, prices: List[int]) -> int:
+    def maxProfit(self, prices: list[int]) -> int:
         dp = [0] * len(prices)
         for j in range(len(prices)):
             for i in range(j):

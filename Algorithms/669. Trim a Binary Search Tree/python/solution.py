@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def trimBST(self, root: Optional[TreeNode], low: int, high: int) -> Optional[TreeNode]:
+    def trimBST(self, root: TreeNode | None, low: int, high: int) -> TreeNode | None:
         def trim(node):
             if node is None:
                 return node

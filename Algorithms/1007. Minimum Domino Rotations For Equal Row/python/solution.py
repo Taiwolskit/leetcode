@@ -1,5 +1,5 @@
 class Solution:
-    def minDominoRotations(self, tops: List[int], bottoms: List[int]) -> int:
+    def minDominoRotations(self, tops: list[int], bottoms: list[int]) -> int:
         def check(x):
             """
             Return min number of swaps

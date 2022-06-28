@@ -1,5 +1,5 @@
 class Solution:
-    def fourSumCount(self, nums1: List[int], nums2: List[int], nums3: List[int], nums4: List[int]) -> int:
+    def fourSumCount(self, nums1: list[int], nums2: list[int], nums3: list[int], nums4: list[int]) -> int:
         cnt = 0
         m = {}
         for a in nums1:

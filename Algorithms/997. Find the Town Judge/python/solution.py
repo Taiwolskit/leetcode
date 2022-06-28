@@ -1,5 +1,5 @@
 class Solution:
-    def findJudge(self, n: int, trust: List[List[int]]) -> int:
+    def findJudge(self, n: int, trust: list[list[int]]) -> int:
         if len(trust) < n - 1:
             return -1
 

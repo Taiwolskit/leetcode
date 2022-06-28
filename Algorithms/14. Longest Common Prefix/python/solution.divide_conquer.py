@@ -1,10 +1,10 @@
 class Solution:
-    def longestCommonPrefix(self, strs: List[str]) -> str:
+    def longestCommonPrefix(self, strs: list[str]) -> str:
         if strs is None or len(strs) == 0:
             return ''
         return self.longestPrefix(strs, 0, len(strs) - 1)
 
-    def longestPrefix(self, strs: List[str], l: int, r: int) -> str:
+    def longestPrefix(self, strs: list[str], l: int, r: int) -> str:
         if l == r:
             return strs[l]
         mid = (l + r) // 2

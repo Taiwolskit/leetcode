@@ -25,7 +25,7 @@ Given two words, `beginWord` and `endWord`, and a dictionary `wordList`, return 
 - `1 <= beginWord.length <= 10`
 - `endWord.length == beginWord.length`
 - `1 <= wordList.length <= 5000`
-- `wordList[i].length == beginWord.length`
-- `beginWord`, `endWord`, and `wordList[i]` consist of lowercase English letters.
+- `wordlist[i].length == beginWord.length`
+- `beginWord`, `endWord`, and `wordlist[i]` consist of lowercase English letters.
 - `beginWord != endWord`
 - All the words in `wordList` are **unique**.

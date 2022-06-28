@@ -1,5 +1,5 @@
 class Solution:
-    def addOperators(self, num: str, target: int) -> List[str]:
+    def addOperators(self, num: str, target: int) -> list[str]:
         N = len(num)
         answers = []
 

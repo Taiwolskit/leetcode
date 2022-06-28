@@ -4,7 +4,7 @@
 #         self.val = val
 #         self.next = next
 class Solution:
-    def splitListToParts(self, head: Optional[ListNode], k: int) -> List[Optional[ListNode]]:
+    def splitListToParts(self, head: ListNode | None, k: int) -> list[ListNode | None]:
         cur = head
         for N in range(1001):
             if not cur:

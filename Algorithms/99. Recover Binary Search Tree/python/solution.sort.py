@@ -5,15 +5,15 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def recoverTree(self, root: Optional[TreeNode]) -> None:
+    def recoverTree(self, root: TreeNode | None) -> None:
         """
         Do not return anything, modify root in-place instead.
         """
 
-        def inorder(r: TreeNode) -> List[int]:
+        def inorder(r: TreeNode) -> list[int]:
             return inorder(r.left) + [r.val] + inorder(r.right) if r else []
 
-        def find_two_swapped(nums: List[int]) -> (int, int):
+        def find_two_swapped(nums: list[int]) -> (int, int):
             n = len(nums)
             x = (
                 y

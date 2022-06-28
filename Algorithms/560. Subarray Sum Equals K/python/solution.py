@@ -1,5 +1,5 @@
 class Solution:
-    def subarraySum(self, nums: List[int], k: int) -> int:
+    def subarraySum(self, nums: list[int], k: int) -> int:
         count, amount = 0, 0
         hash_map = {0: 1}
         for num in nums:

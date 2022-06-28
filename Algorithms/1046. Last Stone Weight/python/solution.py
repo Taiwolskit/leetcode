@@ -1,5 +1,5 @@
 class Solution:
-    def lastStoneWeight(self, stones: List[int]) -> int:
+    def lastStoneWeight(self, stones: list[int]) -> int:
 
         # Set up the bucket array.
         max_weight = max(stones)

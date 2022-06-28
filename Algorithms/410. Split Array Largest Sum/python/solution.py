@@ -1,5 +1,5 @@
 class Solution:
-    def splitArray(self, nums: List[int], m: int) -> int:
+    def splitArray(self, nums: list[int], m: int) -> int:
 
         def min_subarrays_required(max_sum_allowed: int) -> int:
             current_sum = 0

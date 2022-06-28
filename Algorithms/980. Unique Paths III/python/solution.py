@@ -1,5 +1,5 @@
 class Solution:
-    def uniquePathsIII(self, grid: List[List[int]]) -> int:
+    def uniquePathsIII(self, grid: list[list[int]]) -> int:
         rows, cols = len(grid), len(grid[0])
 
         # step 1). initialize the conditions for backtracking

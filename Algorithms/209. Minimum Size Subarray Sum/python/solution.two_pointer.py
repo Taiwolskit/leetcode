@@ -2,7 +2,7 @@ import sys
 
 
 class Solution:
-    def minSubArrayLen(self, target: int, nums: List[int]) -> int:
+    def minSubArrayLen(self, target: int, nums: list[int]) -> int:
         n = len(nums)
         ans = sys.maxsize
         left = 0

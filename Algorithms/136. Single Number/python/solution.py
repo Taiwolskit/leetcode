@@ -1,7 +1,7 @@
 class Solution:
-    def singleNumber(self, nums: List[int]) -> int:
+    def singleNumber(self, nums: list[int]) -> int:
         """
-        :type nums: List[int]
+        :type nums: list[int]
         :rtype: int
         """
         a = 0

@@ -1,5 +1,5 @@
 class Solution:
-    def findDuplicate(self, nums: List[int]) -> int:
+    def findDuplicate(self, nums: list[int]) -> int:
         seen = set()
         for num in nums:
             if num in seen:

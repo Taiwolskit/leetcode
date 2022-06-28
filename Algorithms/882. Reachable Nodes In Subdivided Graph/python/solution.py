@@ -1,5 +1,5 @@
 class Solution:
-    def reachableNodes(self, edges: List[List[int]], maxMoves: int, n: int) -> int:
+    def reachableNodes(self, edges: list[list[int]], maxMoves: int, n: int) -> int:
         graph = collections.defaultdict(dict)
         for u, v, w in edges:
             graph[u][v] = graph[v][u] = w

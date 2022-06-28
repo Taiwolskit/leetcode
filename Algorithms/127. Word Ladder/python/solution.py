@@ -29,11 +29,11 @@ class Solution:
 
         return None
 
-    def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
+    def ladderLength(self, beginWord: str, endWord: str, wordList: list[str]) -> int:
         """
         :type beginWord: str
         :type endWord: str
-        :type wordList: List[str]
+        :type wordList: list[str]
         :rtype: int
         """
         if endWord not in wordList or not endWord or not beginWord or not wordList:

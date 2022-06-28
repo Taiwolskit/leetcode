@@ -1,6 +1,6 @@
 class Solution:
     def reverseWords(self, s: str) -> str:
-        result: List[str] = []
+        result: list[str] = []
         word: str = ""
         for ch in s:
             if ch == " ":

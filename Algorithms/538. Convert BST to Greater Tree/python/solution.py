@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def convertBST(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+    def convertBST(self, root: TreeNode | None) -> TreeNode | None:
         # Get the node with the smallest value greater than this one.
         def get_successor(node):
             succ = node.right

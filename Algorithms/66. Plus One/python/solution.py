@@ -1,5 +1,5 @@
 class Solution:
-    def plusOne(self, digits: List[int]) -> List[int]:
+    def plusOne(self, digits: list[int]) -> list[int]:
         n = len(digits)
 
         # move along the input array starting from the end

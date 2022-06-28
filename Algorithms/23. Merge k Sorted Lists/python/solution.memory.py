@@ -6,9 +6,9 @@
 
 
 class Solution:
-    def mergeKLists(self, lists: List[ListNode]) -> ListNode:
+    def mergeKLists(self, lists: list[ListNode]) -> ListNode:
         """
-        :type lists: List[ListNode]
+        :type lists: list[ListNode]
         :rtype: ListNode
         """
         amount = len(lists)

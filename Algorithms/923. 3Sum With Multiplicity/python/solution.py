@@ -2,7 +2,7 @@ from collections import Counter
 
 
 class Solution:
-    def threeSumMulti(self, arr: List[int], target: int) -> int:
+    def threeSumMulti(self, arr: list[int], target: int) -> int:
         MOD = 10**9 + 7
         count = Counter(arr)
         keys = sorted(count)

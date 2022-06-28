@@ -1,5 +1,5 @@
 class Solution:
-    def getRow(self, rowIndex: int) -> List[int]:
+    def getRow(self, rowIndex: int) -> list[int]:
         curr = []
         prev = [1]
         for i in range(1, rowIndex + 1):

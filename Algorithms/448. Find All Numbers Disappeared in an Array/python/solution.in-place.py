@@ -1,8 +1,8 @@
 class Solution:
-    def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+    def findDisappearedNumbers(self, nums: list[int]) -> list[int]:
         """
-        :type nums: List[int]
-        :rtype: List[int]
+        :type nums: list[int]
+        :rtype: list[int]
         """
 
         # Iterate over each of the elements in the original array

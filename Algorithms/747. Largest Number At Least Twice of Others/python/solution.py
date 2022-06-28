@@ -1,5 +1,5 @@
 class Solution:
-    def dominantIndex(self, nums: List[int]) -> int:
+    def dominantIndex(self, nums: list[int]) -> int:
         if len(nums) == 0:
             return -1
 

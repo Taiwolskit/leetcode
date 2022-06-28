@@ -6,7 +6,7 @@
 
 
 class Solution:
-    def mergeKLists(self, lists: List[ListNode]) -> ListNode:
+    def mergeKLists(self, lists: list[ListNode]) -> ListNode:
         merged_lists = []
         for head in lists:
             node = head

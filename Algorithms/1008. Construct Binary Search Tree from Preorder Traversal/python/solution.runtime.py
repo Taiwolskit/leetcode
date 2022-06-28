@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def bstFromPreorder(self, preorder: List[int]) -> Optional[TreeNode]:
+    def bstFromPreorder(self, preorder: list[int]) -> TreeNode | None:
         iterator = iter(preorder)
         root = current = TreeNode(next(iterator))
         for val in iterator:

@@ -1,5 +1,5 @@
 class Solution:
-    def tictactoe(self, moves: List[List[int]]) -> str:
+    def tictactoe(self, moves: list[list[int]]) -> str:
 
         # n stands for the size of the board, n = 3 for the current game.
         n = 3

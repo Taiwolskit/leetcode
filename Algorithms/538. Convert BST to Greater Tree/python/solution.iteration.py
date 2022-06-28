@@ -5,11 +5,11 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def convertBST(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+    def convertBST(self, root: TreeNode | None) -> TreeNode | None:
         total = 0
 
         node = root
-        stack: List[TreeNode] = []
+        stack: list[TreeNode] = []
         while stack or node is not None:
             # push all nodes up to (and including) this subtree's maximum on
             # the stack.

@@ -1,5 +1,5 @@
 class Solution:
-    def slowestKey(self, releaseTimes: List[int], keysPressed: str) -> str:
+    def slowestKey(self, releaseTimes: list[int], keysPressed: str) -> str:
         n = len(releaseTimes)
         max_diff = releaseTimes[0]
         result = keysPressed[0]

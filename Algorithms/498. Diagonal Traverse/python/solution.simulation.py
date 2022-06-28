@@ -1,6 +1,6 @@
 class Solution:
 
-    def findDiagonalOrder(self, mat: List[List[int]]) -> List[int]:
+    def findDiagonalOrder(self, mat: list[list[int]]) -> list[int]:
 
         # Check for an empty matrix
         if not mat or not mat[0]:

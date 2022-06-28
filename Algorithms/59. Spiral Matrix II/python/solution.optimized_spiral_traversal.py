@@ -1,5 +1,5 @@
 class Solution:
-    def generateMatrix(self, n: int) -> List[List[int]]:
+    def generateMatrix(self, n: int) -> list[list[int]]:
         result = [[0 for _ in range(n)] for _ in range(n)]
         # right, down, left, up
         dr = [[0, 1], [1, 0], [0, -1], [-1, 0]]

@@ -1,9 +1,9 @@
 class Solution(object):
 
-    def findDiagonalOrder(self, mat: List[List[int]]) -> List[int]:
+    def findDiagonalOrder(self, mat: list[list[int]]) -> list[int]:
         """
-        :type mat: List[List[int]]
-        :rtype: List[int]
+        :type mat: list[list[int]]
+        :rtype: list[int]
         """
         d = {}
         # loop through matrix

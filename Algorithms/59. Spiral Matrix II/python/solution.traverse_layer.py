@@ -1,5 +1,5 @@
 class Solution:
-    def generateMatrix(self, n: int) -> List[List[int]]:
+    def generateMatrix(self, n: int) -> list[list[int]]:
         result = [[0 for _ in range(n)] for _ in range(n)]
         cnt = 1
         for layer in range((n + 1) // 2):

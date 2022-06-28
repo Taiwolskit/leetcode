@@ -1,5 +1,5 @@
 class Solution:
-    def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+    def spiralOrder(self, matrix: list[list[int]]) -> list[int]:
         VISITED = 101
         rows, columns = len(matrix), len(matrix[0])
         # Four directions that we will move: right, down, left, up.

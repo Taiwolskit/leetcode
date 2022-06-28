@@ -5,7 +5,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+    def kthSmallest(self, root: TreeNode | None, k: int) -> int:
         """
         :type root: TreeNode
         :type k: int

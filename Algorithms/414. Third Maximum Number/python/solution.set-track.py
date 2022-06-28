@@ -1,5 +1,5 @@
 class Solution:
-    def thirdMax(self, nums: List[int]) -> int:
+    def thirdMax(self, nums: list[int]) -> int:
         maximums = set()
         for num in nums:
             maximums.add(num)

@@ -1,8 +1,8 @@
 class Solution:
-    def letterCombinations(self, digits: str) -> List[str]:
+    def letterCombinations(self, digits: str) -> list[str]:
         """
         :type digits: str
-        :rtype: List[str]
+        :rtype: list[str]
         """
         phone = {'2': ['a', 'b', 'c'],
                  '3': ['d', 'e', 'f'],

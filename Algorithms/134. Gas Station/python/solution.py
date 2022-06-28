@@ -1,8 +1,8 @@
 class Solution:
-    def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
+    def canCompleteCircuit(self, gas: list[int], cost: list[int]) -> int:
         """
-        :type gas: List[int]
-        :type cost: List[int]
+        :type gas: list[int]
+        :type cost: list[int]
         :rtype: int
         """
         total_tank, curr_tank = 0, 0

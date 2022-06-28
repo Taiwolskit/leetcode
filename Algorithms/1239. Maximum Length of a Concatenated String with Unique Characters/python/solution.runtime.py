@@ -1,5 +1,5 @@
 class Solution:
-    def maxLength(self, arr: List[str]) -> int:
+    def maxLength(self, arr: list[str]) -> int:
         def max_len_of_merged_word(words):
             largest, M = 0, len(words)
             for i in range(M):

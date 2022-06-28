@@ -5,7 +5,7 @@
 #         self.next = None
 
 class Solution:
-    def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
+    def swapPairs(self, head: ListNode | None) -> ListNode | None:
         """
         :type head: ListNode
         :rtype: ListNode

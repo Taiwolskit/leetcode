@@ -1,5 +1,5 @@
 class Solution:
-    def twoCitySchedCost(self, costs: List[List[int]]) -> int:
+    def twoCitySchedCost(self, costs: list[list[int]]) -> int:
         # Sort by a gain which company has
         # by sending a person to city A and not to city B
         costs.sort(key=lambda x: x[0] - x[1])

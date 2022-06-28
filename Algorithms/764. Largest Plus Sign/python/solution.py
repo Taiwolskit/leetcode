@@ -1,5 +1,5 @@
 class Solution:
-    def orderOfLargestPlusSign(self, n: int, mines: List[List[int]]) -> int:
+    def orderOfLargestPlusSign(self, n: int, mines: list[list[int]]) -> int:
         banned = {tuple(mine) for mine in mines}
         dp = [[0] * n for _ in range(n)]
         ans = 0

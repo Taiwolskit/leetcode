@@ -2,7 +2,7 @@ from collections import defaultdict
 
 
 class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+    def topKFrequent(self, nums: list[int], k: int) -> list[int]:
         buckets = [[] for _ in range(len(nums) + 1)]
         number_count = defaultdict(int)
         for num in nums:

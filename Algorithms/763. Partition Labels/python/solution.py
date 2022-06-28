@@ -1,5 +1,5 @@
 class Solution:
-    def partitionLabels(self, s: str) -> List[int]:
+    def partitionLabels(self, s: str) -> list[int]:
         last = {c: i for i, c in enumerate(s)}
         j = 0
         anchor = -1

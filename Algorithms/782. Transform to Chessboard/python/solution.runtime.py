@@ -1,5 +1,5 @@
 class Solution:
-    def movesToChessboard(self, board: List[List[int]]) -> int:
+    def movesToChessboard(self, board: list[list[int]]) -> int:
         n = len(board)
         board0 = board[0]
         if not (n // 2 <= sum(board0) <= (n + 1) // 2):

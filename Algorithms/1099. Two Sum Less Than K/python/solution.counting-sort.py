@@ -1,5 +1,5 @@
 class Solution:
-    def twoSumLessThanK(self, nums: List[int], k: int) -> int:
+    def twoSumLessThanK(self, nums: list[int], k: int) -> int:
         answer = -1
         count = [0] * 1001
         for num in nums:

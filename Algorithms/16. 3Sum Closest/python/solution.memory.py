@@ -1,5 +1,5 @@
 class Solution:
-    def threeSumClosest(self, nums: List[int], target: int) -> int:
+    def threeSumClosest(self, nums: list[int], target: int) -> int:
         nums = sorted(nums)
         length = len(nums)
         i = 1

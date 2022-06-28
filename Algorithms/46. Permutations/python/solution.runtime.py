@@ -1,7 +1,7 @@
 # Recursive
 # 每次取一個數字作為第一個數字，其他數字作排列後，再將第一個數字將上去
 class Solution:
-    def permute(self, nums: List[int]) -> List[List[int]]:
+    def permute(self, nums: list[int]) -> list[list[int]]:
         res = []
         self.dfs(nums, [], res)
         return res
@@ -19,8 +19,8 @@ class Solution:
 class Solution(object):
     def permute(self, nums):
         """
-        :type nums: List[int]
-        :rtype: List[List[int]]
+        :type nums: list[int]
+        :rtype: list[list[int]]
         """
         visited = [0] * len(nums)
         res = []
