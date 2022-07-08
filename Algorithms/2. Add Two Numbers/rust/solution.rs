@@ -15,7 +15,10 @@
 //   }
 // }
 impl Solution {
-    pub fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+    pub fn add_two_numbers(
+        l1: Option<Box<ListNode>>,
+        l2: Option<Box<ListNode>>,
+    ) -> Option<Box<ListNode>> {
         let mut p = l1;
         let mut q = l2;
 
@@ -23,7 +26,7 @@ impl Solution {
         let mut curr = dummyHead.as_mut();
         let mut carry = 0;
 
-        while p.is_some() || q.is_some() || carry > 0{
+        while p.is_some() || q.is_some() || carry > 0 {
             let mut sum = carry;
             if let Some(node) = p {
                 sum += node.val;

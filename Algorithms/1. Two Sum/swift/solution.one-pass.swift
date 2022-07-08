@@ -1,13 +1,13 @@
 class Solution {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        var hash: [Int : Int] = [:]
+        var hashmap: [Int: Int] = [:]
 
         for (i, num) in nums.enumerated() {
-            if let index = hash[target - num] {
-                return [index, i]
+            if let complement: Int = hashmap[target - num] {
+                return [i, complement]
             }
 
-            hash[num] = i
+            hashmap[num] = i
         }
 
         return []
