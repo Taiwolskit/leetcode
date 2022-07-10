@@ -1,6 +1,6 @@
 class Solution:
     def longestPalindrome(self, s: str) -> str:
-        expand_str = '#'.join(f'^{s}$')
+        expand_str = "#".join(f"^{s}$")
         n = len(expand_str)
         P = [0] * n
         center = right = 0
@@ -15,4 +15,4 @@ class Solution:
                 center, right = i, i + P[i]
 
         max_len, center_idex = max((n, i) for i, n in enumerate(P))
-        return s[(center_idex - max_len) // 2: (center_idex + max_len) // 2]
+        return s[(center_idex - max_len) // 2 : (center_idex + max_len) // 2]
