@@ -181,7 +181,7 @@ How I choose the solution?
 | 1115   | [Print FooBar Alternately](https://leetcode.com/problems/print-foobar-alternately/)                           | Medium     |                    | :white_check_mark: |
 | 1116   | [Print Zero Even Odd](https://leetcode.com/problems/print-zero-even-odd/)                                     | Medium     |                    | :white_check_mark: |
 | 1117   | [Building H2O](https://leetcode.com/problems/building-h2o/)                                                   | Medium     |                    | :white_check_mark: |
-| 1188   | [Design Bounded Blocking Queue](https://leetcode.com/problems/design-bounded-blocking-queue/)                 | Medium     |                    |                    |
+| 1188   | [Design Bounded Blocking Queue](https://leetcode.com/problems/design-bounded-blocking-queue/)                 | Medium     |                    | :white_check_mark: |
 | 1195   | [Fizz Buzz Multithreaded](https://leetcode.com/problems/fizz-buzz-multithreaded/)                             | Medium     |                    | :white_check_mark: |
 | 1226   | [The Dining Philosophers](https://leetcode.com/problems/the-dining-philosophers/)                             | Medium     |                    | :white_check_mark: |
 | 1242   | [Web Crawler Multithreaded](https://leetcode.com/problems/web-crawler-multithreaded/)                         | Medium     |                    |                    |
