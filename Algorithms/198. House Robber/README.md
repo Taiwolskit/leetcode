@@ -20,5 +20,5 @@ Given an integer array `nums` representing the amount of money of each house, re
 
 **Constraints:**
 
--   `1 <= nums.length <= 100`
--   `0 <= nums[i] <= 400`
+- `1 <= nums.length <= 100`
+- `0 <= nums[i] <= 400`
