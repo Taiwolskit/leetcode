@@ -30,6 +30,6 @@ Return _the **maximum number of points** you can earn by applying the above oper
 - `1 <= nums.length <= 2 * 10**4`
 - `1 <= nums[i] <= 10**4`
 
-**Hint 1**
+**Hint 1:**
 
 If you take a number, you might as well take them all. Keep track of what the value is of the subset of the input with maximum M when you either take or don't take M.

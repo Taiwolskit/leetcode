@@ -1,9 +1,10 @@
 from collections import defaultdict
+from typing import Any
 
 
 class Solution:
     def deleteAndEarn(self, nums: list[int]) -> int:
-        points: dict[int, int] = defaultdict(int)
+        points: defaultdict[Any, int] = defaultdict(int)
         max_number: int = 0
         # Precomputed how many points we gain from taking an element
         for num in nums:
@@ -11,7 +12,7 @@ class Solution:
             max_number = max(max_number, num)
 
         # Declare our array along with base cases
-        max_points: list[int] = [0] * (max_number + 1)
+        max_points = [0] * (max_number + 1)
         max_points[1] = points[1]
 
         for num in range(2, len(max_points)):

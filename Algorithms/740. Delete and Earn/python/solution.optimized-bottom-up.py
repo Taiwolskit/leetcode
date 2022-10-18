@@ -1,5 +1,5 @@
 class Solution:
-    def deleteAndEarn(self, nums: List[int]) -> int:
+    def deleteAndEarn(self, nums: list[int]) -> int:
         points: dict[int, int] = {}
         max_number: int = 0
         # Precomputed how many points we gain from taking an element
