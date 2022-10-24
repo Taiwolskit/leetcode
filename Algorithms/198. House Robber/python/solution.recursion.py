@@ -1,6 +1,6 @@
 class Solution:
-    def __init__(self):
-        self.memo = {}
+    def __init__(self) -> None:
+        self.memo: dict[int, int] = {}
 
     def rob(self, nums: list[int]) -> int:
         self.memo = {}
@@ -16,7 +16,7 @@ class Solution:
             return self.memo[i]
 
         # Recursive relation evaluation to get the optimal answer.
-        ans = max(self.robFrom(i + 1, nums), self.robFrom(i + 2, nums) + nums[i])
+        ans: int = max(self.robFrom(i + 1, nums), self.robFrom(i + 2, nums) + nums[i])
 
         # Cache for future use.
         self.memo[i] = ans
