@@ -12,7 +12,7 @@ class Solution:
             max_number = max(max_number, num)
 
         # Declare our array along with base cases
-        max_points = [0] * (max_number + 1)
+        max_points: list[int] = [0] * (max_number + 1)
         max_points[1] = points[1]
 
         for num in range(2, len(max_points)):

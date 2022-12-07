@@ -22,7 +22,6 @@ func maxPoints(points map[int]int, num int) int {
 
 	if maxPoints(points, num-1) > maxPoints(points, num-2)+points[num] {
 		return maxPoints(points, num-1)
-	} else {
-		return maxPoints(points, num-2) + points[num]
 	}
+	return maxPoints(points, num-2) + points[num]
 }
