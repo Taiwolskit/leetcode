@@ -211,6 +211,7 @@ How I choose the solution?
 | 197    | [Rising Temperature](https://leetcode.com/problems/rising-temperature/)                                                 | Easy       | :white_check_mark: | :white_check_mark: |
 | 262    | [Trips and Users](https://leetcode.com/problems/trips-and-users/)                                                       | Hard       |                    | :white_check_mark: |
 | 511    | [Game Play Analysis I](https://leetcode.com/problems/game-play-analysis-i/)                                             | Easy       |                    | :white_check_mark: |
+| 584    | [Find Customer Referee](https://leetcode.com/problems/find-customer-referee/)                                           | Easy       | :white_check_mark: | :white_check_mark: |
 | 595    | [Big Countries](https://leetcode.com/problems/big-countries/)                                                           | Easy       | :white_check_mark: | :white_check_mark: |
 | 596    | [Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/)                             | Easy       | :white_check_mark: | :white_check_mark: |
 | 601    | [Human Traffic of Stadium](https://leetcode.com/problems/human-traffic-of-stadium/)                                     | Hard       | :white_check_mark: | :white_check_mark: |
@@ -218,6 +219,8 @@ How I choose the solution?
 | 626    | [Exchange Seats](https://leetcode.com/problems/exchange-seats/)                                                         | Medium     | :white_check_mark: | :white_check_mark: |
 | 627    | [Swap Salary](https://leetcode.com/problems/swap-salary/)                                                               | Easy       | :white_check_mark: | :white_check_mark: |
 | 1179   | [Reformat Department Table](https://leetcode.com/problems/reformat-department-table/)                                   | Easy       |                    | :white_check_mark: |
+| 1757   | [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/)                       | Easy       |                    | :white_check_mark: |
+| 1873   | [Calculate Special Bonus](https://leetcode.com/problems/calculate-special-bonus/)                                       | Easy       |                    | :white_check_mark: |
 
 ## Shell
 
