@@ -218,6 +218,7 @@ How I choose the solution?
 | 620    | [Not Boring Movies](https://leetcode.com/problems/not-boring-movies/)                                                   | Easy       | :white_check_mark: | :white_check_mark: |
 | 626    | [Exchange Seats](https://leetcode.com/problems/exchange-seats/)                                                         | Medium     | :white_check_mark: | :white_check_mark: |
 | 627    | [Swap Salary](https://leetcode.com/problems/swap-salary/)                                                               | Easy       | :white_check_mark: | :white_check_mark: |
+| 1148   | [Article Views I](https://leetcode.com/problems/article-views-i/)                                                       | Easy       |                    | :white_check_mark: |
 | 1179   | [Reformat Department Table](https://leetcode.com/problems/reformat-department-table/)                                   | Easy       |                    | :white_check_mark: |
 | 1757   | [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/)                       | Easy       |                    | :white_check_mark: |
 | 1873   | [Calculate Special Bonus](https://leetcode.com/problems/calculate-special-bonus/)                                       | Easy       |                    | :white_check_mark: |
