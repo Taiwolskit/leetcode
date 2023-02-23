@@ -221,6 +221,7 @@ How I choose the solution?
 | 1050   | [Actors and Directors Who Cooperated At Least Three Times](https://leetcode.com/problems/actors-and-directors-who-cooperated-at-least-three-times/) | Easy       |                    | :white_check_mark: |
 | 1148   | [Article Views I](https://leetcode.com/problems/article-views-i/)                                                                                   | Easy       |                    | :white_check_mark: |
 | 1179   | [Reformat Department Table](https://leetcode.com/problems/reformat-department-table/)                                                               | Easy       |                    | :white_check_mark: |
+| 1581   | [Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/)     | Easy       |                    | :white_check_mark: |
 | 1693   | [Daily Leads and Partners](https://leetcode.com/problems/daily-leads-and-partners/)                                                                 | Easy       |                    | :white_check_mark: |
 | 1729   | [Find Followers Count](https://leetcode.com/problems/find-followers-count/)                                                                         | Easy       |                    | :white_check_mark: |
 | 1757   | [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/)                                                   | Easy       |                    | :white_check_mark: |
