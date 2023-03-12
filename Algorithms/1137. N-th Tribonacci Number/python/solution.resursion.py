@@ -1,23 +1,15 @@
-class Tri:
-    def __init__(self):
-        def helper(k):
-            if k == 0:
-                return 0
-
-            if nums[k]:
-                return nums[k]
-
-            nums[k] = helper(k - 1) + helper(k - 2) + helper(k - 3)
-            return nums[k]
-
-        n = 38
-        self.nums = nums = [0] * n
-        nums[1] = nums[2] = 1
-        helper(n - 1)
-
-
 class Solution:
-    t = Tri()
+    def __init__(self) -> None:
+        self.memo: dict[int, int] = {
+            0: 0,
+            1: 1,
+            2: 1,
+        }
 
     def tribonacci(self, n: int) -> int:
-        return self.t.nums[n]
+        if n in self.memo:
+            return self.memo[n]
+        self.memo[n] = (
+            self.tribonacci(n - 1) + self.tribonacci(n - 2) + self.tribonacci(n - 3)
+        )
+        return self.memo[n]

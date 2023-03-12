@@ -1,6 +1,6 @@
 class Solution:
     def minCostClimbingStairs(self, cost: list[int]) -> int:
-        def minimum_cost(i: int):
+        def minimum_cost(i: int) -> int:
             # Base case, we are allowed to start at either step 0 or step 1
             if i <= 1:
                 return 0

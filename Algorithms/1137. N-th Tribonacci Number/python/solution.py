@@ -1,14 +1,7 @@
-class Tri:
-    def __init__(self):
-        n = 38
-        self.nums = nums = [0] * n
-        nums[1] = nums[2] = 1
-        for i in range(3, n):
-            nums[i] = nums[i - 1] + nums[i - 2] + nums[i - 3]
-
-
 class Solution:
-    t = Tri()
-
     def tribonacci(self, n: int) -> int:
-        return self.t.nums[n]
+        memo: list[int] = [0, 1, 1] + [0] * (n - 3 + 1)
+
+        for i in range(3, len(memo)):
+            memo[i] = memo[i - 1] + memo[i - 2] + memo[i - 3]
+        return memo[n]
