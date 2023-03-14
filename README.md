@@ -212,6 +212,7 @@ How I choose the solution?
 | 262    | [Trips and Users](https://leetcode.com/problems/trips-and-users/)                                                                                   | Hard       |                    | :white_check_mark: |
 | 511    | [Game Play Analysis I](https://leetcode.com/problems/game-play-analysis-i/)                                                                         | Easy       | :white_check_mark: | :white_check_mark: |
 | 584    | [Find Customer Referee](https://leetcode.com/problems/find-customer-referee/)                                                                       | Easy       | :white_check_mark: | :white_check_mark: |
+| 586    | [Customer Placing the Largest Number of Orders](https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/description/)           | Easy       | :white_check_mark: | :white_check_mark: |
 | 595    | [Big Countries](https://leetcode.com/problems/big-countries/)                                                                                       | Easy       | :white_check_mark: | :white_check_mark: |
 | 596    | [Classes More Than 5 Students](https://leetcode.com/problems/classes-more-than-5-students/)                                                         | Easy       | :white_check_mark: | :white_check_mark: |
 | 601    | [Human Traffic of Stadium](https://leetcode.com/problems/human-traffic-of-stadium/)                                                                 | Hard       | :white_check_mark: | :white_check_mark: |
@@ -223,6 +224,7 @@ How I choose the solution?
 | 1148   | [Article Views I](https://leetcode.com/problems/article-views-i/)                                                                                   | Easy       |                    | :white_check_mark: |
 | 1158   | [Market Analysis I](https://leetcode.com/problems/market-analysis-i/)                                                                               | Medium     |                    | :white_check_mark: |
 | 1179   | [Reformat Department Table](https://leetcode.com/problems/reformat-department-table/)                                                               | Easy       |                    | :white_check_mark: |
+| 1407    | [Top Travellers](https://leetcode.com/problems/top-travellers/)                                                                                           | Easy       |  | :white_check_mark: |
 | 1581   | [Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/)     | Easy       |                    | :white_check_mark: |
 | 1693   | [Daily Leads and Partners](https://leetcode.com/problems/daily-leads-and-partners/)                                                                 | Easy       |                    | :white_check_mark: |
 | 1729   | [Find Followers Count](https://leetcode.com/problems/find-followers-count/)                                                                         | Easy       |                    | :white_check_mark: |
