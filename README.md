@@ -1,12 +1,11 @@
 # LeetCode Solution
 
-Cracking the LeetCode with multiple programming language
+Cracking the LeetCode with multiple programming languages
+How do I choose the solution?
 
-How I choose the solution?
-
-1. Choose the best time complexity and space complexity solution from the official solution.
+1. Choose the solution with the best time complexity and space complexity from the official solutions.
 2. If the best time complexity and space complexity solutions are different, choose the best solution from each one.
-3. If there are no official solutions, choose the best solution from submission by each language. These best solutions are not meant the best time complexity and space complexity. I will refer to the legibility of the solution, overly complex and tricky ones will not be selected.
+3. If there are no official solutions, choose the best solution from the submissions for each language. These best solutions are not necessarily the ones with the best time complexity and space complexity but instead are selected based on the readability of the solution. Overly complex and tricky solutions will not be selected.
 
 ## Algorithms
 
