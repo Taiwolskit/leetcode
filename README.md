@@ -223,12 +223,13 @@ How do I choose the solution?
 | 1148   | [Article Views I](https://leetcode.com/problems/article-views-i/)                                                                                   | Easy       |                    | :white_check_mark: |
 | 1158   | [Market Analysis I](https://leetcode.com/problems/market-analysis-i/)                                                                               | Medium     |                    | :white_check_mark: |
 | 1179   | [Reformat Department Table](https://leetcode.com/problems/reformat-department-table/)                                                               | Easy       |                    | :white_check_mark: |
-| 1407    | [Top Travellers](https://leetcode.com/problems/top-travellers/)                                                                                           | Easy       |  | :white_check_mark: |
+| 1407   | [Top Travellers](https://leetcode.com/problems/top-travellers/)                                                                                     | Easy       |                    | :white_check_mark: |
 | 1581   | [Customer Who Visited but Did Not Make Any Transactions](https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/)     | Easy       |                    | :white_check_mark: |
 | 1693   | [Daily Leads and Partners](https://leetcode.com/problems/daily-leads-and-partners/)                                                                 | Easy       |                    | :white_check_mark: |
 | 1729   | [Find Followers Count](https://leetcode.com/problems/find-followers-count/)                                                                         | Easy       |                    | :white_check_mark: |
 | 1757   | [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/)                                                   | Easy       |                    | :white_check_mark: |
 | 1873   | [Calculate Special Bonus](https://leetcode.com/problems/calculate-special-bonus/)                                                                   | Easy       |                    | :white_check_mark: |
+| 1965   | [Employees With Missing Information](https://leetcode.com/problems/employees-with-missing-information/)                                             | Easy       |                    | :white_check_mark: |
 
 ## Shell
 
