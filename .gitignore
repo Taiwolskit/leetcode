@@ -329,3 +329,7 @@ fastlane/test_output
 iOSInjectionProject/
 
 .vscode
+
+# Added by cargo
+
+/target
