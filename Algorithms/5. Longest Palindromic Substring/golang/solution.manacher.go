@@ -1,37 +1,33 @@
 func longestPalindrome(s string) string {
-	var expandStr string = "#"
-	for _, c := range s {
-		expandStr += string(c) + "#"
-	}
-	var maxLen int = len(expandStr)
-	var P []int = make([]int, maxLen)
-	var center int = 0
-	var right int = 0
-	for i := 0; i < maxLen; i++ {
-		var mirror int = 2*center - i
-		if mirror < 0 {
-			mirror = 0
-		}
+	expand_str := "^#" + strings.Join(strings.Split(s, ""), "#") + "#$"
+	n := len(expand_str)
+	P := make([]int, n)
+	center, right := 0, 0
+	for i := 1; i < n-1; i++ {
+		i_mirror := 2*center - i
 		if right > i {
-			P[i] = P[mirror]
-			if P[mirror] > right-i {
-				P[i] = right - i
-			}
+			P[i] = min(right-i, P[i_mirror])
 		}
-		for i-P[i] >= 0 && i+P[i] < maxLen && expandStr[i-P[i]] == expandStr[i+P[i]] {
+		for expand_str[i+(1+P[i])] == expand_str[i-(1+P[i])] {
 			P[i]++
 		}
 		if i+P[i] > right {
-			center = i
-			right = i + P[i]
+			center, right = i, i+P[i]
 		}
 	}
-	var maxIndex int = 0
-	for i, v := range P {
-		if v > P[maxIndex] {
-			maxIndex = i
+	maxLen, centerIndex := 0, 0
+	for i := 0; i < n; i++ {
+		if P[i] > maxLen {
+			maxLen = P[i]
+			centerIndex = i
 		}
 	}
-	var start int = (maxIndex - P[maxIndex] + 1) / 2
-	return s[start : start+P[maxIndex]-1]
+	return strings.Replace(s[(centerIndex-maxLen)/2:(centerIndex+maxLen)/2], "#", "", -1)
+}
+
+func min(x, y int) int {
+	if x < y {
+		return x
+	}
+	return y
 }

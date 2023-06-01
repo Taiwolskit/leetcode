@@ -1,6 +1,6 @@
 class Solution:
     def heightChecker(self, heights: list[int]) -> int:
-        sort_height = sorted(heights)
+        sort_height: list[int] = sorted(heights)
 
         total = 0
         for num1, num2 in zip(heights, sort_height):
